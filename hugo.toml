@@ -46,3 +46,19 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[params]
+    socialIcons = [
+      {name = "linkedin", url = "https://in.linkedin.com/in/shuklaamita"},
+      {name = "github", url = "https://github.com/amita-shukla"},
+      {name = "stackoverflow", url = "http://stackoverflow.com/users/3858467/amita"},
+      {name = "goodreads", url = "https://www.goodreads.com/amita_shukla"}
+    ]
+    avatarURL = "/images/avatar.png"
+    avatarSize = "size-m"
+    description = "Software Engineer @ Cloudera"
+    fontSize = "1.1rem"
+    togglePreviousAndNextButtons = true
+    displayReadingTime = true
+    showBackToTopButton = true
+    showPostsOnHomePage = "recent"

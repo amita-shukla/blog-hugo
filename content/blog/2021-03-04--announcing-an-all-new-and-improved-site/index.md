@@ -90,7 +90,7 @@ There are a number of Static Site Generators out there, and I wanted to work on 
 - A more descriptive 'about me' section
 - A super cool logo and favicon
 - No overflowing Code Snippets
-- Emoji support :laughing:
+- Emoji support 😆
 
 ## Open Source
-The blog is open source, meaning that all the source code and content is [here](https://github.com/amita-shukla/blog-1). Do check out the README file and the issues in the pipeline. If interested, you are free to fork (checkout the license).  I am still a beginner in React development, and simply abhor CSS, so all suggestions to improve the code are welcome! :smile:
+The blog is open source, meaning that all the source code and content is [here](https://github.com/amita-shukla/blog-1). Do check out the README file and the issues in the pipeline. If interested, you are free to fork (checkout the license).  I am still a beginner in React development, and simply abhor CSS, so all suggestions to improve the code are welcome! 😊
