@@ -12,7 +12,7 @@ slug: lets-plant-tree
 type: post
 draft: false
 ---
-<re-img src="1ff9c42b-52ba-429d-aaaf-f0c06bc1e894.jpg"></re-img>
+![image](1ff9c42b-52ba-429d-aaaf-f0c06bc1e894.jpg)
 
  
 Trees seem like an interesting topic but scared to start? Lets start by learning the basics of trees and move on to play with them! Like the trees' structure in relevance to computer science, we need to start from the root. 
@@ -30,7 +30,7 @@ If you have not read about trees before, this will blow your mind. A recursive d
 Somewhat like this: 
 
 
-<re-img src="pic026.jpg"></re-img>
+![image](pic026.jpg)
 
  
 Done with the textbook definition, why should we bother about binary trees? 

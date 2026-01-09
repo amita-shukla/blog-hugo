@@ -13,7 +13,7 @@ I use git for most of my projects now, at work and off work. While I am easily a
  
 
 
-<re-img src="git.png"></re-img>
+![image](git.png)
 
  
 Let's go bottom-up: 
@@ -234,7 +234,7 @@ We'll be moving on to commits next. Let's take some rest and revisit the command
  
 
 
-<!-- <re-img src="take_a_break_git.gif"></re-img> -->
+<!-- ![image](take_a_break_git.gif) -->
 
  
  

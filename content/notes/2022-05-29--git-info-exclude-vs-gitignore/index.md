@@ -14,7 +14,7 @@ If you have files that you wish not to be tracked by git, you need to inform git
 1. One is by creating a file named `.gitignore`, and adding the path of the file you wish to ignore on it.
 2. The other is by appending the file path in file: `.git/info/exclude`
 
-<re-img src="git_info_exclude.jpg"></re-img>
+![image](git_info_exclude.jpg)
 
 The difference between these two is that the `.gitignore` file is part of your source tree, i.e. it is meant to committed and shared across all the clones. So the patterns mentioned in `.gitignore` will be applicable to all the developers working on the code.
 

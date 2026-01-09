@@ -53,7 +53,7 @@ Clicking on the option provided me with the links that can be hosted on several 
  
 
 
-<re-img src="Links-Photo-Sharing.png"></re-img>
+![image](Links-Photo-Sharing.png)
 
  
 

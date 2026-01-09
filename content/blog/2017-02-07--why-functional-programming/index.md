@@ -38,7 +38,7 @@ As I went on reading code written by my colleagues in Scala, I realized that the
  
 
 
-<re-img src="FP.png"></re-img>
+![image](FP.png)
 
  
 

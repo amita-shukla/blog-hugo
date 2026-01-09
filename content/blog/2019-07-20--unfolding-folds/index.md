@@ -11,7 +11,7 @@ slug: unfolding-folds
 type: post
 draft: false
 ---
-<re-img src="fold.jpg"></re-img>
+![image](fold.jpg)
 
  
 Lists can be represented as: 

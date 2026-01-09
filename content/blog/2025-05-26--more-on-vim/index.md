@@ -14,7 +14,7 @@ In my previous post [Inevitable Vi](https://amitashukla.in/blog/inevitable-vi/),
 
 In this post, I will be discussing how I use Vim as my primary tool for editing and navigating.
 
-<re-img src="vim.jpg"></re-img>
+![image](vim.jpg)
 
 ## Reasons for which I use Vim
 Vim has a slight learning curve. We do not realise the convenience until we try it and have developed some muscle memory. But once we adapt to the way of thinking in terms of vim commands, our life on computers becomes a little easier. We're able to keep our hands steady, our fingers find their home -- with left index on `F` and right index on `J`.

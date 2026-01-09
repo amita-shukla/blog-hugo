@@ -123,7 +123,7 @@ res8: Int = 25
 This is because **Scala differentiates between functions and methods**. The 'functions' we are calling out by using `def` is technically not a function but a method. Defining using `val` gives us the function in real sense in Scala. 
  
 
-<re-img src="scala_meme.jpg"></re-img>
+![image](scala_meme.jpg)
 
 
 #### Functions v/s Methods

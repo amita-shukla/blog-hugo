@@ -22,7 +22,7 @@ But it has been a while that I have been using Vi. It was never that I had any k
  
 
 
-<re-img src="main-qimg-f157a9584f79e958652338eae9a28fc9.png"></re-img>
+![image](main-qimg-f157a9584f79e958652338eae9a28fc9.png)
 
  
 

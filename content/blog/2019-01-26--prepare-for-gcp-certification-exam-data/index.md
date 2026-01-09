@@ -57,7 +57,7 @@ Most of them were based on which were tool was appropriate at what situation. He
  
 
 
-<re-img src="GCP.png"></re-img>
+![image](GCP.png)
 
  
 

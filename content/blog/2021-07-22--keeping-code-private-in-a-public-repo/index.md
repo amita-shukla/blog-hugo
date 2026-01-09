@@ -17,7 +17,7 @@ A few months before [I launched my blog on a fresh platform](https://amitashukla
 
 For example, these were my pending posts on Blogger: 
 
-<re-img src="blogger_drafts.png"></re-img>
+![image](blogger_drafts.png)
 
 The above list is nothing compared to what I had before the Grand Cleanup: I carried out a <a href="https://en.wikipedia.org/wiki/Swachh_Bharat_Mission" target="_blank">Swachhata Abhiyan</a> and deleted the posts that were never meant to be written. It doesn't mean that these posts were meant to be published, it was just that I had added some content to these and I didn't feel like losing them. Well, let bygones be bygones.
 
@@ -44,7 +44,7 @@ So here is the principle I came up with.
 
 The repo that is behind this blog always contains published content. With that, the other development efforts that go into the repo are public too (check out [this](https://github.com/amita-shukla/blog-1/issues) list of issues). But, the drafts need to be hidden. They wield a lot of power (of destroying my image of writing well-thought-out posts) to be allowed to be in open like that. 
 
-<re-img src="drafts.jpg"></re-img>
+![image](drafts.jpg)
 
 ##<a name="lets-begin">Let's Begin.</a>
 
@@ -54,7 +54,7 @@ Here is the flow I am working on currently to manage my private posts hosted on 
 
 ### 1. **Create a private repository** on Github.
 
-<re-img src="private_repo.png"></re-img>
+![image](private_repo.png)
 
 ### 2. **Add Private Remote** 
 Go to your repository on local, and add another remote called 'private', pointing to the private repository.

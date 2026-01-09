@@ -66,7 +66,7 @@ public Boolean {
   }
 }
 ```
-<re-img src="true_and_false.png"></re-img>
+![image](true_and_false.png)
 
 ## Advantages
 

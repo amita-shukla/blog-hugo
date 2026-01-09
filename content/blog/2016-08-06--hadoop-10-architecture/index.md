@@ -58,7 +58,7 @@ Let’s have a look at the following figure to understand the work-flow of Hadoo
  
 
 
-<re-img src="hadoop2.x-components-architecture.png"></re-img>
+![image](hadoop2.x-components-architecture.png)
 
  
 

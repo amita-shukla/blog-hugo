@@ -24,7 +24,7 @@ Dynamic programming deals with optimization problems. This implies that this tec
  
 
 
-<re-img src="Blog_DP_Quote.png"></re-img>
+![image](Blog_DP_Quote.png)
 
  
  

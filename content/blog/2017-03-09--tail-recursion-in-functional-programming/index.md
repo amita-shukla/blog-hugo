@@ -16,7 +16,7 @@ In my previous post [Going The Functional Way](https://amitashukla.in/blog/why-f
  
 
 
-<re-img src="rec.png"></re-img>
+![image](rec.png)
  
  
 Consider a simple task: Write a function to calculate the factorial of a given number 'n'. 

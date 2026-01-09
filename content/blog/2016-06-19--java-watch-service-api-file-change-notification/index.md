@@ -17,7 +17,7 @@ While I was making my [File Scanner Project](https://github.com/amita-shukla/fil
  
 
 
-<re-img src="JAVA_watch_service_api.jpg"></re-img>
+![image](JAVA_watch_service_api.jpg)
 
  
  

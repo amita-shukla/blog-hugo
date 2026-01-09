@@ -19,7 +19,7 @@ Currently, I am working on not Google Chrome but Chromium, open source web brows
  
 
 
-<re-img src="DncJWGy.png"></re-img>
+![image](DncJWGy.png)
 
 Not a fuss about it, that's what you get when you search the Ubuntu Software Center. And I discovered what I was using quite later.
 
@@ -33,7 +33,7 @@ Chrome logs me in with my personal account, and it maintains a sync across all t
  
 
 
-<re-img src="ChromeAccount.png"></re-img>
+![image](ChromeAccount.png)
 
  
 
@@ -45,7 +45,7 @@ Any other person who wants to use my browser gets the Guest account, or I have M
  
 
 
-<re-img src="GuestAccount.png"></re-img>
+![image](GuestAccount.png)
 
 ### The Little Bookmark Icons
 
@@ -56,7 +56,7 @@ When adding bookmarks in the usual way it is done, my chrome can accommodate onl
  
 
 
-<re-img src="HighlightBookmarks.png"></re-img>
+![image](HighlightBookmarks.png)
 
  
 
@@ -69,7 +69,7 @@ Load the page completely that you want to bookmark, and star it. Choose the fold
  
 
 
-<re-img src="AddBookmark.png"></re-img>
+![image](AddBookmark.png)
 
  
 
@@ -93,7 +93,7 @@ I know googling is easy, but it saves a lot of time if we categorize our frequen
  
 
 
-<re-img src="Folder.png"></re-img>
+![image](Folder.png)
 
  
 
@@ -112,7 +112,7 @@ But it can't help if I forget to make entries of daily transactions! set which p
  
 
 
-<re-img src="StartUpPages.png"></re-img>
+![image](StartUpPages.png)
 
  
 
@@ -137,7 +137,7 @@ Google Chrome also has its own password generator, though I haven't used it.
  
 
 
-<re-img src="PasswordGenerate.png"></re-img>
+![image](PasswordGenerate.png)
 
  
 
@@ -151,7 +151,7 @@ It displays all the processes that are running on chrome. We can choose which on
  
 
 
-<re-img src="TaskManager.png"></re-img>
+![image](TaskManager.png)
 
  
 

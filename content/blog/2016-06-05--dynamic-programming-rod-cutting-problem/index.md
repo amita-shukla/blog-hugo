@@ -38,7 +38,7 @@ Given a rod of a particular length, there can be many combinations in which it c
 
 <!-- [![](https://www.cs.indiana.edu/~achauhan/Teaching/B403/LectureNotes/images/07-rodcutting-example.jpg)](https://www.cs.indiana.edu/~achauhan/Teaching/B403/LectureNotes/images/07-rodcutting-example.jpg) -->
 
-<re-img src="07-rodcutting-example.jpg"></re-img>
+![image](07-rodcutting-example.jpg)
 
  
  

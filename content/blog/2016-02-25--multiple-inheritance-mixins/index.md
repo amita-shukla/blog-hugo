@@ -23,7 +23,7 @@ Consider the inheritance situation as displayed below:
  
 
 
-<re-img src="Diamond_Problem.png"></re-img>
+![image](Diamond_Problem.png)
 
  
 

@@ -20,7 +20,7 @@ We will be talking about these cleaning efforts here.
  
 
 
-<re-img src="pqtv2tnlwpb41.jpg"></re-img>
+![image](pqtv2tnlwpb41.jpg)
 
  
 When I say 'cleaning up the data' what does it actually mean? Mostly it depends on your problem. At first, you may get your data from some source in a very unstructured format, like, from a website. For extracting the content of a web page, you would scrape through it, and with that, you would get a lot of gibberish along with the actual content. You might not need all of it though. 
@@ -43,7 +43,7 @@ And then I came across [this](https://stackoverflow.com/questions/1732348/regex-
  
 
 
-<re-img src="stackoverflow_regex_parser.png"></re-img>
+![image](stackoverflow_regex_parser.png)
 
 ```python
 from bs4 import BeautifulSoup

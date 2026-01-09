@@ -27,7 +27,7 @@ And when it comes to the look of your page. What does wonders is:
 
 ### CSS !!
 
-<re-img src="blog_css.png"></re-img>
+![image](blog_css.png)
 
  
 First I needed to find out the class that surrounds this image. 

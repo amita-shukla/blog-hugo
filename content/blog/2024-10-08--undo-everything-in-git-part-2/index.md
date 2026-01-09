@@ -39,7 +39,7 @@ To make any kind of changes to a remote repository, one needs to make changes lo
 
 Consider a commit pushed to a remote repository:
 
-<re-img src="commit_in_repo.png"></re-img>
+![image](commit_in_repo.png)
 
 Here's how it looks locally:
 ```git
@@ -117,10 +117,10 @@ To https://github.com/amita-shukla/sample-repo.git
  + 5dd42d0...e0659d8 master -> master (forced update)
 ```
 
-<re-img src="git_push_force.jpg"></re-img>
+![image](git_push_force.jpg)
 
 Confirm remotely:
-<re-img src="reverted_commit_remote.png"></re-img>
+![image](reverted_commit_remote.png)
 
 ### Undo a merge commit
 
@@ -151,7 +151,7 @@ As you see, the merge commits mentions the merge happening between the two paren
 
 Here's how it looks on remote:
 
-<re-img src="revert_merge_commit.png"></re-img>
+![image](revert_merge_commit.png)
 
 #### revert and push
 As mentioned in the previous post about reverting a commit, you can revert a commit locally, and then push the reverted commit to remote. This is the safest way to undo a commit, without touching history. The catch here is the flag `-m 1`, which specifies __that you're reverting to the main branch after revert__.
@@ -164,7 +164,7 @@ $ git revert -m 1 <merge commit SHA>
 $ git push origin master
 ```
 
-<re-img src="revert_merge_commit_after.png"></re-img>
+![image](revert_merge_commit_after.png)
 
 #### reset and force push
 To erase the merge commit from git log, you can do a `hard reset`. A merge commit has two parent, and typically we want to go back to the mainline (first parent). The first parent is usually the branch into which the merge was made (`master`).
@@ -205,7 +205,7 @@ Total 0 (delta 0), reused 0 (delta 0)
 To https://github.com/amita-shukla/sample-repo.git
  + e0659d8...a07f7bc master -> master (forced update)
 ```
-<re-img src="reverted_merge_without_history.png"></re-img>
+![image](reverted_merge_without_history.png)
 
 ### Undo a Rebase
 #### rebase didn't finish

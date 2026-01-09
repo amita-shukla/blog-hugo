@@ -150,14 +150,14 @@ public class OrderCreationService {
 ### The Problem
 
 As expected, the `POST /orders` endpoint is going to take a long time before it returns. All this time, the caller needs to wait for the result, unable to take any other action:
-<re-img src="create_new_simple_order.png"></re-img>
+![image](create_new_simple_order.png)
 Consider the highlighted 10s it takes for this query to complete.
 
 As discussed in detail in [my previous post](https://amitashukla.in/blog/rest-api-for-long-running-jobs/), when using this application on production, usually a system wide or project timeout is placed. This will cause our Order creation process to fail, as it's going to take atleast 10 seconds. Even if the timeouts are not in place, it's a bad user experience.
 
 ## <a name="long-running-impl">Implementing API for such Long Running Tasks</a>
 With initial setup out of the way, let's move on to modify this API to support such long running operations. Following is the flow we're trying to implement, observe how the POST request immediately returns.
-<re-img src="process_flow.png"></re-img> 
+![image](process_flow.png) 
 
 We introduce another column `Status`, using which we will track the status of the order creation:
 ```java
@@ -299,19 +299,19 @@ Observe that the response body is of the type `Order` here. We no more need the 
 ## Demo Time
 #### Get All Orders
 The `/orders` endpoint works as expected, returns the list of all order details.
-<re-img src="get_all_orders.png"></re-img>
+![image](get_all_orders.png)
 #### Create An Order
 Now we hit a `POST` request to create a new Order. Observe that we receive the response code `202 Accepted`. In response we receive the `id` of the new order being created.
-<re-img src="create_new_order.png"></re-img>
+![image](create_new_order.png)
 #### Get Order Status
 Let's now check the status of this order. We will keep seeing the `IN_PROGRESS` status as long as the background job completes:
-<re-img src="get_in_progress_status.png"></re-img>
+![image](get_in_progress_status.png)
 #### Poll Status Until Completed
 We keep polling until we see the `COMPLETED` status:
-<re-img src="get_completed_status.png"></re-img>
+![image](get_completed_status.png)
 #### Get Results
 Now let's get the results to get the actual order details. Here the `amount` is generated for the given order.
-<re-img src="get_result.png"></re-img>
+![image](get_result.png)
 
 ## Conclusion
 So far, we have implemented the basic flow, with the necessary endpoints to make it work. However, a production level API is far more complicated than this. Generally, it is a good idea to separate the `id`s logically, i.e. have an id such as `taskId` or `transactionId` which is solely maintained for the purposes for tracking a long running job, and a  resource id such as `orderId` here, used for idenitfying that particular resource. When we implement it like this, we can design this further to put an in-memory DB for even quicker tracking of long running processes instead of making rounds to our main product database.

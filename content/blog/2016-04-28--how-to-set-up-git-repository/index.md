@@ -11,7 +11,7 @@ slug: how-to-set-up-git-repository
 type: post
 draft: false
 ---
-<re-img src="Github.png"></re-img>
+![image](Github.png)
 
  
 Its been a while I have been working with git and Github. But I almost forgot how confused I got at the the starting! I could understand all the theory and command, but how to start? This was a big question back then. 

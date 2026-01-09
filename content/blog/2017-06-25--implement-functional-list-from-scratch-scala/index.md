@@ -48,7 +48,7 @@ In my previous [post](https://amitashukla.in/blog/why-functional-programming.htm
  
 
 
-<re-img src="keep-calm-and-do-it-yourself.png"></re-img>
+![image](keep-calm-and-do-it-yourself.png)
 
  
  
@@ -88,7 +88,7 @@ Before coding anything, let's ponder over what exactly are we going to make. Her
 Fundamentally, a linked list is a chain of nodes each referring to exactly one other node until you reach the end of the chain. Lists preserve order, can contain duplicates, can insert, remove elements in constant time (the first element, of course). 
 
 
-<re-img src="linked-list.png"></re-img>
+![image](linked-list.png)
 
  
 Linked List enables to make Scala's list **immutable**. Why immutable? I discussed the need of immutability in my post [Going The Functional](https://amitashukla.in/blog/why-functional-programming.html)[Way](https://amitashukla.in/blog/why-functional-programming.html). In short, we can say that immutability lets you write a code that is free of side effects. 
@@ -113,7 +113,7 @@ class MyList[A] {
  
 
 
-<re-img src="MyList.png"></re-img>
+![image](MyList.png)
 
  
 However, this list doesn't suggest a way to indicate the end of the list. At first, it may occur to assign the `head` and the `tail` as `null`. But `null` has drawbacks associated with it (say, `NullPointerException` ). So, we need each node of the list to be either of the two types: 

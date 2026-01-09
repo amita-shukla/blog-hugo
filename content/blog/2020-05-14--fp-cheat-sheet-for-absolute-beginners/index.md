@@ -16,7 +16,7 @@ Functional Programming languages, in general, turn into a challenging venture at
  
 
 
-<re-img src="meme.jpg"></re-img>
+![image](meme.jpg)
 
  
 

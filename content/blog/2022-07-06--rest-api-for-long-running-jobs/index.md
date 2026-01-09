@@ -55,7 +55,7 @@ GET /orders/3
 ## The Case of Long Running Jobs
 This is a simple workflow for resources which are trivial to create. But sometimes a lot of work can go into creating a resource, e.g. in our case we would need to access database,  call other services such as a products service, users service, a metadata service and so on. In general, even if it's not about creating a resource per se, a POST request caters to a variety of functions.
 
-<re-img src="skeleton_meme.jpg"></re-img>
+![image](skeleton_meme.jpg)
 
 ### More such Use Cases
 - Perform some analytics and generate a report by calculating a number of data points. 

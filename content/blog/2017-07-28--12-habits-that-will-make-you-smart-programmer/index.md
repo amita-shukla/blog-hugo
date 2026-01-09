@@ -19,7 +19,7 @@ Here are a few habits that I follow to make myself more and more efficient as a 
  
 
 
-<re-img src="UPSTART.png"></re-img>
+![image](UPSTART.png)
 
  
  
@@ -58,7 +58,7 @@ When you write awesome code, what is the point in keeping it hidden? Show Off. T
  
 
 
-<re-img src="git.png"></re-img>
+![image](git.png)
 
  
 
@@ -77,7 +77,7 @@ Quite often you must have stumbled upon pattern matching. And be it any programm
  
 
 
-<re-img src="regex.png"></re-img>
+![image](regex.png)
 
  
 Here is the basic regular expression notation: 
@@ -110,7 +110,7 @@ Then just type this single letter command and escape from the tedious task.
  
 
 
-<re-img src="aliases.png"></re-img>
+![image](aliases.png)
 
  
 
@@ -131,7 +131,7 @@ When we are involved in work, we need some place to keep temporary data, steps o
 - Auto completion
 - Document map etc.
 
-<re-img src="notepadpp.jpg"></re-img>
+![image](notepadpp.jpg)
 
  
 Keep all the clutter out of your mind and on a notepad. Want to remember a set of commands? Note them down. Want to remember some file paths? Note them down. Want to remember execution steps? Note them down. At any later point of time, save these notes and get a raw documentation! 
@@ -147,7 +147,7 @@ Bonus tip: Enter`data:text/html, <html contenteditable>` on your google chrome n
 
 ### 5. Be Active On StackOverflow
 
-<re-img src="so.jpg"></re-img>
+![image](so.jpg)
 
  
 Firing a query on Google, and getting the answer from [StackOverflow](http://stackoverflow.com/) saves our day (and our career). What we forget is that it is a community run by people like us. And by saying 'being active' I do not mean just anonymously searching the answers to your questions, but creating an account there and actually 'being there' in as many ways possible. But why should you take the burden? 
@@ -163,7 +163,7 @@ You get help from other people, and in return, you help other programmers out th
 
 #### Earn Reputation.
 
-<re-img src="so_flair.png"></re-img>
+![image](so_flair.png)
 
  
 
@@ -190,7 +190,7 @@ The terminal can be our friend if we know to use its potential to the fullest. U
  
 
 
-<re-img src="shell.png"></re-img>
+![image](shell.png)
 
  
 
@@ -261,7 +261,7 @@ If you end up addressing a large crowd, you will have to make presentations and 
  
 
 
-<re-img src="diagrams.png"></re-img>
+![image](diagrams.png)
 
 
 ### 8. Read Code. A lot of Code.
@@ -310,7 +310,7 @@ I can't emphasize this point enough. There are excellent pieces of literature wh
  
 
 
-<re-img src="how-to-read.jpg"></re-img>
+![image](how-to-read.jpg)
 
  
 

@@ -15,7 +15,7 @@ It looks like I am getting quite proverbial these days. For those who didn't und
  
 
 
-<re-img src="m1rI9.png"></re-img>
+![image](m1rI9.png)
 
  
 

@@ -22,7 +22,7 @@ One of the solutions to the 4-Queen's Puzzle is:
  
 
 
-<re-img src="NQueen.png"></re-img>
+![image](NQueen.png)
 
  
 Solutions to this problem exist for all natural numbers N, with N=2 and N=3 as exception. 
@@ -128,10 +128,10 @@ false otherwise
 But now we need to map these boolean arrays to our 2 dimentional board: 
 
 
-<re-img src="DownDiag.png"></re-img>
+![image](DownDiag.png)
 
 
-<re-img src="UpDiag.png"></re-img>
+![image](UpDiag.png)
 
 We use these additional arrays as follows:
 

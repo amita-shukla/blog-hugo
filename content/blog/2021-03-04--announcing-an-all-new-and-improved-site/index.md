@@ -35,7 +35,7 @@ Blogger is a specialized blogging tool for a layman, but being a programmer it a
 ## Options
 Well, there are a number of options out there apart from my current arrangements that I thought to move onto.
 
-<re-img src="blogging_meme.jpg"></re-img>
+![image](blogging_meme.jpg)
 
 ### WordPress 
 WordPress is on the same wagon as Blogger, it is also a CMS. But WordPress is much more powerful:
