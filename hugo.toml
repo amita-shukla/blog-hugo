@@ -3,6 +3,39 @@ languageCode = "en-us"
 title = "Amita Shukla"
 theme = "gokarna"
 
+[menu]
+
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Follow"
+    url = "/follow/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+
 enableGitInfo = true
 enableRobotsTXT = true
 
