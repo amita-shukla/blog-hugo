@@ -1,4 +1,15 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://amitashukla.in/"
+languageCode = "en-us"
+title = "Amita Shukla"
 theme = "gokarna"
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
