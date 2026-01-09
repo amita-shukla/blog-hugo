@@ -6,6 +6,6 @@ tags:
 author: Amita Shukla
 date: '2022-06-27'
 slug: git-checkout-to-new-branch
-type: note
+type: post
 draft: false
 ---

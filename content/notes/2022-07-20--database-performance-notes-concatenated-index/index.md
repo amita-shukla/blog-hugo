@@ -5,7 +5,7 @@ tags:
 author: Amita Shukla
 date: '2022-07-20'
 slug: database-performance-notes-concatenated-index
-type: note
+type: post
 draft: false
 ---
 ## Concatenated Indexes

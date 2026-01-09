@@ -5,7 +5,7 @@ tags:
 author: Amita Shukla
 date: '2022-07-09'
 slug: rate-limiter-vs-circuit-breeaker
-type: note
+type: post
 draft: false
 ---
 A Rate Limiter is a pattern put in place for a service to protect itself from too many calls. A resource-intensive service is always in danger of overloading if triggered multiple times, or it may end up calling other resource-intensive services, bringing the whole system down. If such a service is exposed directly to clients, it is susceptible to DDOS attacks as well. Another use case is that we may want to limit the user to call a request depending on the Pricing Plan they are subscribed to, e.g. a user can be restricted to call a service only ‘n’ times a day depending upon what plan they’ve chosen. All further calls are rejected.

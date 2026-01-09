@@ -5,7 +5,7 @@ tags:
 author: Amita Shukla
 date: '2025-09-08'
 slug: options
-type: note
+type: post
 draft: false
 ---
 The HTTP OPTIONS method is a request used to inquire about the communication options available for a specific resource or the entire server. It's primarily used for diagnostic purposes, allowing clients to determine which HTTP methods are supported and potentially other CORS (Cross-Origin Resource Sharing) headers.

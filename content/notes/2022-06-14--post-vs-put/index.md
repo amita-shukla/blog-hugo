@@ -6,7 +6,7 @@ tags:
 author: Amita Shukla
 date: '2022-06-14'
 slug: post-vs-put
-type: note
+type: post
 draft: false
 ---
 Both POST and PUT requests are used to create a resource. The main difference is that a PUT request is **idempotent** whereas a POST request is not. This means, if I trigger the same POST request multiple times, that resource gets created multiple times. This is not safe. Whereas, if I trigger a PUT request multiple times, only the first time that resource gets created, other times an update is made to the same resource.

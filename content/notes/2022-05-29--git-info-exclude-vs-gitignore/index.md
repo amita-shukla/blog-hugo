@@ -6,7 +6,7 @@ cover: git_info_exclude.jpg
 author: Amita Shukla
 date: '2022-05-29'
 slug: git-info-exclude-vs-gitignore
-type: note
+type: post
 draft: false
 ---
 If you have files that you wish not to be tracked by git, you need to inform git about it. There are 2 ways to do that:

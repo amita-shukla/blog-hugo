@@ -5,7 +5,7 @@ tags:
 author: Amita Shukla
 date: '2022-07-17'
 slug: database-performance-notes
-type: note
+type: post
 draft: false
 ---
 These are my notes from the book [Database Performance](https://use-the-index-luke.com/sql/table-of-contents) [Chapter 1](https://use-the-index-luke.com/sql/anatomy) by Markus Winand. I found this book fairly simple to read, and it's for free!
