@@ -37,6 +37,7 @@ theme = "gokarna"
 
 
 enableGitInfo = true
+
 enableRobotsTXT = true
 
 [pagination]
