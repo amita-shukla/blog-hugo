@@ -12,6 +12,7 @@ date: '2019-09-05'
 slug: property-based-testing
 type: post
 draft: false
+showTableOfContents: true
 ---
 Let's talk about testing today. And testing is _hard_. The most common way we have been testing is what is known as **Example Based Testing**. 
 Following steps are followed for writing test cases: 

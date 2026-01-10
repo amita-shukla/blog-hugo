@@ -6,6 +6,7 @@ date: '2016-02-21'
 slug: authentication-different-from-authorization
 type: post
 draft: false
+showTableOfContents: true
 ---
 We all hear the words 'authentication' and 'authorization' frequently. However, many a times these words are used interchangeably. This post discusses the difference between the two. 
 

@@ -7,6 +7,7 @@ date: '2016-01-21'
 slug: bitwise-operators-cheat-sheet
 type: post
 draft: false
+showTableOfContents: true
 ---
 Here is the list that I use when dealing with bit-wise operations. 
 Bit-wise operations are considered to be slightly faster than corresponding multiplication/division operations. 

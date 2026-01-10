@@ -10,6 +10,7 @@ date: '2017-01-04'
 slug: writing-orc-files-using-map-reduce
 type: post
 draft: false
+showTableOfContents: true
 ---
 Let's talk about text files first. Storing data as text files is the simplest thing to do. But there are many, many other requirements that just cannot be fulfilled by that. Dealing with text data comes with its challenges... 
 

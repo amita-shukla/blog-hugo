@@ -9,6 +9,7 @@ date: '2016-07-02'
 slug: normalization-in-databases
 type: post
 draft: false
+showTableOfContents: true
 ---
 In my previous [post](http://shuklaamita.blogspot.in/2016/06/relational-database-functional-dependencies-canonical-cover-keys.html), we discussed Relational Database Design. To store data effectively, we must ensure that the data is non-redundant. This reduces conflicts. But how to design such a database that the conflicts are reduced? The answer lies in Normalization. 
  

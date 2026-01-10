@@ -11,6 +11,7 @@ date: '2017-03-09'
 slug: tail-recursion-in-functional-programming
 type: post
 draft: false
+showTableOfContents: true
 ---
 In my previous post [Going The Functional Way](https://amitashukla.in/blog/why-functional-programming.html), I discussed the reasons for venturing into functional programming. Taking my explorations further, I soon realised a truth: Functional Programming relies heavily on Recursion. 
  

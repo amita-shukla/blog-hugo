@@ -8,6 +8,7 @@ date: '2021-04-28'
 slug: understanding-type-subtypes-variance
 type: post
 draft: false
+showTableOfContents: true
 ---
 Most of us when we just start with programming, get confused with concepts of types, subtypes, inheritance, etc. But just as with the process of learning any language this all starts to come naturally to us, we grow up to casually use subtyping wherever we want in a program. In fact, it becomes almost unimaginable to code without these.  
 

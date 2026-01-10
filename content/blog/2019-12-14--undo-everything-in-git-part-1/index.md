@@ -8,6 +8,7 @@ date: '2019-12-14'
 slug: undo-everything-in-git-part-1
 type: post
 draft: false
+showTableOfContents: true
 ---
 I use git for most of my projects now, at work and off work. While I am easily able to save history on git, I need to get back to man pages to be able to manoeuvre through the git history backwards. So I decided to jot down how to rewind your git history, and undo the changes at several stages. 
  

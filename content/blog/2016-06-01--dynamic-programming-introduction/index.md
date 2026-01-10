@@ -10,6 +10,7 @@ date: '2016-06-01'
 slug: dynamic-programming-introduction
 type: post
 draft: false
+showTableOfContents: true
 ---
 Aah! Its been a long time since I last updated. Sorry my dear readers about that. College has ended, and that brought with it a lot many hassles to deal with. 
  

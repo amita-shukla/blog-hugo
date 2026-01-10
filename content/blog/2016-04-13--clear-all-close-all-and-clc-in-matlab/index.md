@@ -9,6 +9,7 @@ date: '2016-04-13'
 slug: clear-all-close-all-and-clc-in-matlab
 type: post
 draft: false
+showTableOfContents: true
 ---
 I was studying some machine learning projects I glanced over the following startup lines: 
 

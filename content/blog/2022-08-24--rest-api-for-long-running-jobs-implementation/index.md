@@ -10,6 +10,7 @@ date: '2022-08-24'
 slug: rest-api-for-long-running-jobs-implementation
 type: post
 draft: false
+showTableOfContents: true
 ---
 In previous post [Rest API For Long Running Job](https://amitashukla.in/blog/rest-api-for-long-running-jobs/) we discussed the design of an API exposed to handle long runnining jobs. Such an API decouples the long running process with the actual API, and instead of indefinitely waiting for a response we expose a `/status` endpoint to monitor the progress of the running task.
 

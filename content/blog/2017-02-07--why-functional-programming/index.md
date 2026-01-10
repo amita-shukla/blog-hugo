@@ -10,6 +10,7 @@ date: '2017-02-07'
 slug: why-functional-programming
 type: post
 draft: false
+showTableOfContents: true
 ---
 2016 ended with me struggling to solve Scala assignments on Coursera. It was a mind-twisting experience, as I was accustomed to writing Java code. My [first assignment](https://github.com/amita-shukla/functional-programming) was on the topic Recursion, was a set of three problems, printing the Pascal's Triangle, checking balanced parenthesis, and change given the money. I had practised all these problems, but in Java. Doing these problems in functional programming was baffling, as it has an entirely different approach to solving problems. 
  

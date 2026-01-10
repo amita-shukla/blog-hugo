@@ -10,6 +10,7 @@ date: '2020-05-14'
 slug: fp-cheat-sheet-for-absolute-beginners
 type: post
 draft: false
+showTableOfContents: true
 ---
 Functional Programming languages, in general, turn into a challenging venture at the very start. On one hand, it sounds simple when all you have to do is use functions instead of loads of language constructs. [Who needs a loop when we have folds](https://amitashukla.in/blog/unfolding-folds.html)! But there is another problem. Now we don't know which function we need to use when. A lot of times for coding a simple task, I had to rush to the docs, search extensively, only to discover half an hour later that all I had to use was a `lift`. or a `fold`. or a `map`. Aghhh! At this learning level, what comes handy is a pool of functions to refer to first before jumping into the sea of all the libraries and functions ever created. Gradually over time, these functions (and their type signatures) embed themselves on our minds, and then programming becomes a breeze.
 

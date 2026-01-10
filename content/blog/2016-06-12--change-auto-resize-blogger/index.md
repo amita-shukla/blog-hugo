@@ -10,6 +10,7 @@ date: '2016-06-12'
 slug: change-auto-resize-blogger
 type: post
 draft: false
+showTableOfContents: true
 ---
 Maintaining a blog is a real problem. And when using a custom template, it gets really difficult to even make a single change, as it may reflect somewhere else, if any careless action is made.
 

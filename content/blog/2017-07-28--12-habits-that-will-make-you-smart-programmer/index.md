@@ -12,6 +12,7 @@ date: '2017-07-28'
 slug: 12-habits-that-will-make-you-smart-programmer
 type: post
 draft: false
+showTableOfContents: true
 ---
 It is said that \"Master the work you do most often\". So if programming is what we do most often, we should definitely come up with practices that help us to master whatever we do, along with learning new skills. 
  

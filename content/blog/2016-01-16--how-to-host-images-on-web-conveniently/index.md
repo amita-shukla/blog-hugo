@@ -8,6 +8,7 @@ date: '2016-01-16'
 slug: how-to-host-images-on-web-conveniently
 type: post
 draft: false
+showTableOfContents: true
 ---
 In this post we talk about how to host images on the web so that it can be viewed by everybody. 
 

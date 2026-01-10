@@ -8,6 +8,7 @@ date: '2024-10-08'
 slug: undo-everything-in-git-part-2
 type: post
 draft: false
+showTableOfContents: true
 ---
 In my previous post [Undo everything in Git - Part 1](https://amitashukla.in/blog/undo-everything-in-git-part-1/), I disucussed various undo scenarios on a git repository locally. Now, in this post, we discuss the undo strategies when we have pushed our code to remote already.
 

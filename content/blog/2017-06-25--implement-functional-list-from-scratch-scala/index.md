@@ -11,6 +11,7 @@ date: '2017-06-25'
 slug: implement-functional-list-from-scratch-scala
 type: post
 draft: false
+showTableOfContents: true
 ---
 After studying the [why](https://amitashukla.in/blog/why-functional-programming.html) and [how](https://amitashukla.in/blog/tail-recursion-in-functional-programming.html) of Functional Programming, the time had come to study the real-life implementation of this paradigm. So, I went on reading Scala source code. And why not? Scala [claims](https://www.scala-lang.org/what-is-scala.html#functional) to be a full-blown functional language, and allows an easy migration from imperative to functional. It was plain sailing until I stumbled upon List.scala and saw this: 
 

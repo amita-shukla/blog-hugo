@@ -9,6 +9,7 @@ date: '2015-12-25'
 slug: find-all-possible-subsets-of-given-set
 type: post
 draft: false
+showTableOfContents: true
 ---
 The problem is: Given a set of distinct integers, S, return all possible subsets.
 

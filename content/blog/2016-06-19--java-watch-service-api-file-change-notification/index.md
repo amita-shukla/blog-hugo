@@ -12,6 +12,7 @@ date: '2016-06-19'
 slug: java-watch-service-api-file-change-notification
 type: post
 draft: false
+showTableOfContents: true
 ---
 While I was making my [File Scanner Project](https://github.com/amita-shukla/file-scanner), the most initial task was to set a watch over given property files. If any change occurred in any of the properties files, it had to be reported. 
  

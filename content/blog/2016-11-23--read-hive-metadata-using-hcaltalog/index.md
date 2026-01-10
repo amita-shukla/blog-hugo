@@ -10,6 +10,7 @@ date: '2016-11-23'
 slug: read-hive-metadata-using-hcaltalog
 type: post
 draft: false
+showTableOfContents: true
 ---
 Apache Hive is a client side library that is used to provide an abstraction of the data in HDFS, in the form of tables. Hive jobs are internally converted to MR plan, submitted to Hadoop cluster for execution. Now let's move on to know what is the Hive metastore. 
  

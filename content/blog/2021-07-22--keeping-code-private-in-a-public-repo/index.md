@@ -8,6 +8,7 @@ date: '2021-07-22'
 slug: keeping-code-private-in-a-public-repo
 type: post
 draft: false
+showTableOfContents: true
 ---
 In this post I talk about how I manage to keep some of my posts private while keeping everything else part of a public repository. 
 

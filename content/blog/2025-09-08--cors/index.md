@@ -9,6 +9,7 @@ draft: false
 type: post
 slug: cors
 author: Amita Shukla
+showTableOfContents: true
 ---
 Whether we're building public APIs, internal tools, or just calling third-party services — understanding and configuring CORS correctly is part of responsible development. Cross-Origin Resource Sharing is a security feature implemented by browsers to restrict how resources are shared between different origins. For example, if site A (hosted on origin a.com) wants to make a direct request to site B (hosted on origin b.com), browsers do not allow that by default. CORS is a way to relax this policy safely.
 

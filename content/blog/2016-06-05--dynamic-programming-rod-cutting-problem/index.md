@@ -11,6 +11,7 @@ date: '2016-06-05'
 slug: dynamic-programming-rod-cutting-problem
 type: post
 draft: false
+showTableOfContents: true
 ---
 One of the most popular problem based on Dynamic Programming is Rod Cutting. 
  

@@ -10,6 +10,7 @@ date: '2022-01-22'
 slug: understanding-static-factory-methods
 type: post
 draft: false
+showTableOfContents: true
 ---
 There is ample material on how we can use constructors to create new objects, but still we can opt out the use of constructors somtimes. In the object oriented world, where everything is an object, some need not be so. 
 

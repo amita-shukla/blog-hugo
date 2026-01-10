@@ -8,6 +8,7 @@ date: '2016-01-07'
 slug: how-i-made-google-chrome-my-chrome
 type: post
 draft: false
+showTableOfContents: true
 ---
 I have been using Google Chrome since many years and I have not found a single reason to choose any other browser over it!
 

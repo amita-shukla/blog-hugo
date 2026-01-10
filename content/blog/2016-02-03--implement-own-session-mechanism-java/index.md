@@ -11,6 +11,7 @@ date: '2016-02-03'
 slug: implement-own-session-mechanism-java
 type: post
 draft: false
+showTableOfContents: true
 ---
 While working on my project [Mail Aggregator](https://github.com/amita-shukla/mail-aggregator/tree/master/src), I went on to implement my own session mechanism, which I share in this post. 
  

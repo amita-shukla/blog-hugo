@@ -10,6 +10,7 @@ date: '2016-01-24'
 slug: how-to-enable-clicks-on-carousel
 type: post
 draft: false
+showTableOfContents: true
 ---
 Yesterday as I was editing my [Portfolio](http://amita-shukla.github.io/) which has the carousel functionality, I encountered a peculiar functionality. None of the left clicks on the link worked. However, the links opened on pressing the right click and clicking \"open in new tab\". 
  

@@ -9,6 +9,7 @@ date: '2016-12-11'
 slug: shell-in-nutshell
 type: post
 draft: false
+showTableOfContents: true
 ---
 It looks like I am getting quite proverbial these days. For those who didn't understand, I was talking about the title. I am working on automation of my project in office, and it involved a lot of SHELL scripting. Oh yes, you got it now. Please don't kill me.
 

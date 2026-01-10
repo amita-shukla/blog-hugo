@@ -8,6 +8,7 @@ date: '2015-12-22'
 slug: cing-again-use-of-double-pointer-in
 type: post
 draft: false
+showTableOfContents: true
 ---
 As I was checking out some programming questions on the topic linked list, it was boring to just read the programs without implementing them. 
 So, I decided to try out linked list again, trying to devise out some more efficient ways to solve a very simple problem. 

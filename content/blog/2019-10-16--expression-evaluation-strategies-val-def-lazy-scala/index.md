@@ -9,6 +9,7 @@ date: '2019-10-16'
 slug: expression-evaluation-strategies-val-def-lazy-scala
 type: post
 draft: false
+showTableOfContents: true
 ---
 I have been using Scala for a while now. Coming from a Java background, it was eye soothing to see lesser boilerplate code. However, as I went deeper into more and more code written by Scala devs out there, there were a lot of things I just could not wrap my head around. Wait! This is not going to be a rant on the language. Instead, I will be touching upon the most basic stuff today - **declaring, initializing variables** (let's call them 'variable', though they may not necessarily vary) and **evaluating expressions**. 
  

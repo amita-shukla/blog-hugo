@@ -7,6 +7,7 @@ date: '2015-12-19'
 slug: lets-innovate-we-all-seem-overwhelmed_19
 type: post
 draft: false
+showTableOfContents: true
 ---
 ## 
 

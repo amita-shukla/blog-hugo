@@ -11,6 +11,7 @@ date: '2017-04-19'
 slug: providing-hadoop-configurations-to
 type: post
 draft: false
+showTableOfContents: true
 ---
 Let's talk about Map Reduce Programming. It is simple in the first go. In fact, dealing with distributed systems has never been simpler. Design your job into Map and Reduce tasks. Implement these functions, create a jar, and run the hadoop jar command on your Hadoop cluster. Voila! A whole lot of things done on any amount of data. 
 But, Map Reduce runs with its default set of configurations, and these defaults may not fit your particular case. When it comes to dealing with big data over a distributed environment, we need some tweaks every now and then. 

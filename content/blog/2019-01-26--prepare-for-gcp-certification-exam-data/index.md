@@ -12,6 +12,7 @@ date: '2019-01-26'
 slug: prepare-for-gcp-certification-exam-data
 type: post
 draft: false
+showTableOfContents: true
 ---
 Google Cloud Platform (GCP) is fairly new in the cloud market, dominated by the AWS. Though Google has a long way to go in terms of the variety of tools offered in the cloud space, the good part is that its current set is enterprise ready. I had my share of the Google Cloud experience at work, and then while preparing for the Google Could Data Engineer exam. Studying and playing with these tools was so fun and securing the certificate (and a google hoodie) was a sweet award for it. 
  

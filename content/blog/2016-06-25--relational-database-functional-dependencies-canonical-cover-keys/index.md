@@ -8,6 +8,7 @@ date: '2016-06-25'
 slug: relational-database-functional-dependencies-canonical-cover-keys
 type: post
 draft: false
+showTableOfContents: true
 ---
 Database systems are used to manage large bodies of information. For an enterprise, database management is crucial, for purposes such as sales, accounting, manufacturing, banking etc. Almost every institution in today's world needs to maintain a database. 
  

@@ -9,6 +9,7 @@ date: '2025-05-26'
 slug: more-on-vim
 type: post
 draft: false
+showTableOfContents: true
 ---
 In my previous post [Inevitable Vi](https://amitashukla.in/blog/inevitable-vi/), I talked about getting started with Vi (or Vim). Since then, vim has become an integral part of my workflow. Who could have thought you'd need to open countless files across remote servers, with no fancy text editors to help? It started from there, but I gradually realised the power of Vim -- no need to lift your hand to reach over to the mouse (or trackpad) -- control everything using keyboard. Today, I look for vim anywhere I can. I use it in all my IDEs, command line, browsers, etc.
 

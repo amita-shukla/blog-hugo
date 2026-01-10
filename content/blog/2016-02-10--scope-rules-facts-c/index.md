@@ -7,6 +7,7 @@ date: '2016-02-10'
 slug: scope-rules-facts-c
 type: post
 draft: false
+showTableOfContents: true
 ---
 Variables to programming is the same as words to a language. These are probably the first thing that we start to deal with as soon as we start making programs. But as we go on more and more, we get to face an issue: 
 \"To what parts of the program is this variable accessible?\" 

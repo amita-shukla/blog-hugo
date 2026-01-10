@@ -10,6 +10,7 @@ date: '2019-07-20'
 slug: unfolding-folds
 type: post
 draft: false
+showTableOfContents: true
 ---
 ![image](fold.jpg)
 

@@ -10,6 +10,7 @@ date: '2016-12-05'
 slug: inevitable-vi
 type: post
 draft: false
+showTableOfContents: true
 ---
 Ok I confess, I had heard like a hundred times that you just can't escape Vi, the powerful text editor of all times. But even when I had worked on Ubuntu or to say, Linux machine for a while, I never felt that dire need to work on Vi. Oh common, you have GEdit! Or Nano -- I had used it a number of times. And then, of course, I knew a few commands (I know only some even now), and my favourite was `:q!` , just in case I accidently get to use Vi. 
 

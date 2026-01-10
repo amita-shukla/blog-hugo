@@ -13,6 +13,7 @@ date: '2020-03-26'
 slug: nlp-101
 type: post
 draft: false
+showTableOfContents: true
 ---
 In this post, I would go over a few commonly used Natural Language Processing techniques. There's a lot of emphasis on what techniques to use for processing data, be it for data analysis, or data science, or big data depending on the scenario. But just like for Physics problems we assume negligible air resistance, friction, etc., for data problems we assume negligible poor quality data. In real life though, poor quality data is not so negligible. In fact, it is substantial and significant effort goes into data preparation before it is ready to be consumed by our data science models. 
  

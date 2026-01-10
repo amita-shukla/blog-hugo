@@ -9,6 +9,7 @@ date: '2024-06-15'
 slug: spring-design-patterns
 type: post
 draft: false
+showTableOfContents: true
 ---
 Understanding design patterns is best achieved through practical application. However, we often miss how they're built into the frameworks or libraries we use. In Spring Framework, different design patterns are used to make applications flexible and easy to maintain. Sometimes we use these patterns unknowingly. Let's explore the below design patterns to understand how they work in real-world applications:
 

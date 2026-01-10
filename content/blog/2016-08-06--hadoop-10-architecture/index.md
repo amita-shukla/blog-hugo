@@ -9,6 +9,7 @@ date: '2016-08-06'
 slug: hadoop-10-architecture
 type: post
 draft: false
+showTableOfContents: true
 ---
 ### What is Hadoop?
 

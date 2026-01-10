@@ -7,6 +7,7 @@ date: '2016-07-09'
 slug: decomposition-rules-in-databases-lossless-and-dependency-preservation
 type: post
 draft: false
+showTableOfContents: true
 ---
 In my previous posts, we discussed the [terms used in database design](http://shuklaamita.blogspot.com/2016/06/relational-database-functional-dependencies-canonical-cover-keys.html), and the [principles used to design relational databases](http://shuklaamita.blogspot.com/2016/07/normalization-in-databases.html). We discussed as to how Normal Forms can be used to determine whether or not to decompose a database, and how to decompose it. 
  

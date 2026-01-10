@@ -9,6 +9,7 @@ date: '2021-03-04'
 slug: announcing-an-all-new-and-improved-site
 type: post
 draft: false
+showTableOfContents: true
 ---
 Enough is enough, I have thrown away my older site and have switched to Static Site Generator- GatsbyJS based blog and portfolio. It wasn't so easy as I built this in about 2 months while the older one was running since eternity.
 

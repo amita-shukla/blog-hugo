@@ -9,6 +9,7 @@ date: '2016-04-22'
 slug: cell-arrays-in-matlab
 type: post
 draft: false
+showTableOfContents: true
 ---
 As I dig deeper and deeper into the MATLAB world, I learn new concepts everyday. I must say, MATLAB is very flexible. After working on languages like JAVA and C for long, working on MATLAB has given me a new sense of freedom : I have got rid of the braces ! I am so habitual of defining scope in the form of curly braces {} , that I tend to use them in MATLAB without realizing it to the point of compilation error. 
  

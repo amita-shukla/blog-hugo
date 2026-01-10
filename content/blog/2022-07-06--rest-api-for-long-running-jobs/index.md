@@ -9,6 +9,7 @@ date: '2022-07-06'
 slug: rest-api-for-long-running-jobs
 type: post
 draft: false
+showTableOfContents: true
 ---
 Consider the case below where we have an API for 'orders'. We want to expose an Order Service for a client to  list all orders, create a new order, or get details for a particular order.
 

@@ -11,6 +11,7 @@ date: '2016-01-04'
 slug: lets-plant-tree
 type: post
 draft: false
+showTableOfContents: true
 ---
 ![image](1ff9c42b-52ba-429d-aaaf-f0c06bc1e894.jpg)
 

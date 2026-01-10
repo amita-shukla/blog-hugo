@@ -10,6 +10,7 @@ date: '2016-04-28'
 slug: how-to-set-up-git-repository
 type: post
 draft: false
+showTableOfContents: true
 ---
 ![image](Github.png)
 

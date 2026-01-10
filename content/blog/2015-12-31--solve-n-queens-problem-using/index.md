@@ -10,6 +10,7 @@ date: '2015-12-31'
 slug: solve-n-queens-problem-using
 type: post
 draft: false
+showTableOfContents: true
 ---
 ### Problem Statement:
 

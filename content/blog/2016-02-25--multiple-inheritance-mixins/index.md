@@ -9,6 +9,7 @@ date: '2016-02-25'
 slug: multiple-inheritance-mixins
 type: post
 draft: false
+showTableOfContents: true
 ---
 This post discusses about the issues related to multiple inheritance and where it can be useful. 
 As the concept goes, we call it multiple inheritance when a class inherits characteristics from more than one parent class. 

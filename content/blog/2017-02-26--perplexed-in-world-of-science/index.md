@@ -10,6 +10,7 @@ date: '2017-02-26'
 slug: perplexed-in-world-of-science
 type: post
 draft: false
+showTableOfContents: true
 ---
 After a long break, it was time to go through my YouTube Subscriptions, and dive in the world of Science. Science has never stopped to amaze me, and so happened when I was going through this channel - [Kurzgesagt (In a Nutshell)](https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q). After watching each video, I got mixed feelings, of amazement, confusion, sadness, and hope. Giving you a list of some of them so you get the taste! 
  
