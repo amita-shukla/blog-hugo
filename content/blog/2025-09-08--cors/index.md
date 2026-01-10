@@ -5,7 +5,7 @@ tags:
 - SECURITY
 - FRONTEND
 - JAVASCRIPT
-draft: true
+draft: false
 type: post
 slug: cors
 author: Amita Shukla
