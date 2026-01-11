@@ -13,25 +13,7 @@ showTableOfContents: true
 ---
 I have been using Scala for a while now. Coming from a Java background, it was eye soothing to see lesser boilerplate code. However, as I went deeper into more and more code written by Scala devs out there, there were a lot of things I just could not wrap my head around. Wait! This is not going to be a rant on the language. Instead, I will be touching upon the most basic stuff today - **declaring, initializing variables** (let's call them 'variable', though they may not necessarily vary) and **evaluating expressions**. 
  
-There are painfully a lot of different ways to declare stuff in Scala, along with the regular `var` and `val`. Let's quickly glance over what we will be looking into: 
-
-
-- [`var`s](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#vars)
-- [`val`s](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#vals)
-- [`def`](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#defs)
-- - [functions v/s methods, difference b/w `val` and `def`](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#fvsm)
-- [`lazy val`](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#lazy_vals)
-- - [a small exercise](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#exercise)
-- [function parameters](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#function_params)
-- - [call by value v/s call by name](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#evaluation_strategies)
-- [anonymous function](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#anon_functions)
-- [class parameters](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#class_params)
-- [case class parameters](https://www.blogger.com/blogger.g?blogID=1167440767733751967&pli=1#case_class_params)
-
-As we go through all of the above, we shall take a peek into the related concepts.
-
- 
-
+There are painfully a lot of different ways to declare stuff in Scala, along with the regular `var` and `val`.
 
 ### `var`s, that are allowed to vary
 

@@ -11,18 +11,7 @@ type: post
 draft: false
 showTableOfContents: true
 ---
-Understanding design patterns is best achieved through practical application. However, we often miss how they're built into the frameworks or libraries we use. In Spring Framework, different design patterns are used to make applications flexible and easy to maintain. Sometimes we use these patterns unknowingly. Let's explore the below design patterns to understand how they work in real-world applications:
-
-<a href="#dependency-injection-di--inversion-of-control-ioc">1. Dependency Injection (DI) / Inversion of Control (IoC)</a><br>
-<a href="#creating-beans-using-factory-pattern">2. Creating Beans using Factory Pattern</a><br>
-<a href="#singleton-scope-for-beans-per-container-per-bean">3. Singleton Scope for Beans (per container per bean)</a><br>
-<a href="#the-prototype-scope-for-beans">4. The Prototype Scope for Beans</a><br>
-<a href="#spring-aop-using-proxy-pattern">5. Spring AOP using Proxy Pattern</a><br>
-<a href="#template-method-pattern-in-jdbctemplate">6. Template Method Pattern in JdbcTemplate</a><br>
-<a href="#event-handling-using-observer-pattern">7. Event Handling using Observer Pattern</a><br>
-<a href="#transaction-management-using-strategy-pattern">8. Transaction Management using Strategy Pattern</a><br>
-<a href="#configuration-parsing-using-composite-pattern">9. Configuration Parsing using Composite Pattern</a><br>
-<a href="#build-restclient-using-builder-pattern">10. Build RestClient using Builder Pattern</a><br>
+Understanding design patterns is best achieved through practical application. However, we often miss how they're built into the frameworks or libraries we use. In Spring Framework, different design patterns are used to make applications flexible and easy to maintain. Sometimes we use these patterns unknowingly. Let's explore the below design patterns to understand how they work in real-world applications.
 
 ### Dependency Injection (DI) / Inversion of Control (IoC)
 

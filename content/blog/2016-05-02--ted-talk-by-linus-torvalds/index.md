@@ -12,6 +12,7 @@ Was just browsing some videos on the Ted website that I came across the intervie
  
 And yes, the Linux World Headquarters view is quite amusing! :D
 
+https://www.youtube.com/watch?v=o8NPllzkFhE&pp=ygUadGVkIHRhbGsgYnkgbGludXMgdG9ydmFsZHM%3D
  
 
 
