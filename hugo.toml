@@ -67,3 +67,5 @@ enableRobotsTXT = true
     displayReadingTime = true
     showBackToTopButton = true
     showPostsOnHomePage = "recent"
+    customHeadHTML = '<link rel="stylesheet" href="/css/custom.css">'
+    customFooterHTML = '<script src="/js/mailchimp.js"></script>'
