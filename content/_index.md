@@ -12,7 +12,7 @@ A chunk of my experience has gone into writing REST web services, engines and fr
 
 On the frontend side, I have worked with React and vanilla Javascript, and a little bit with Purescript. 
 
-I believe in not restricting myself to the tech stack or programming language but rather focus on the purpose it solves, having switched gears between Python, Haskell, Groovy, .Net/ C#, PHP, C++ in the past. Overtime, I have gotten more inclined towards __type safe languages__.
+I believe in not restricting myself to the tech stack or programming language but rather focus on the purpose it solves, having switched gears between Python, Haskell, Groovy, .Net/ C#, PHP, C++ in the past. Overtime, I have gotten more inclined towards type safe languages.
 
 ## Get in Touch
 You can reach out to me directly [here](/contact), [subscribe](/follow) to my blog or check out my profiles linked above.
@@ -21,4 +21,4 @@ You can reach out to me directly [here](/contact), [subscribe](/follow) to my bl
 This blog is now built using Hugo and a minimal, content-first setup, something I deliberately chose to keep the focus on writing rather than tooling.
 
 Dive into my thoughts [here](/blog). I combine my passion for programming, teaching and writing through long-form posts and short notes.  
-This blog is **open source** and lives on [GitHub](https://github.com/amita-shukla/blog-hugo). If you spot an issue or want to suggest an improvement, feel free to open an issue or fork it and make it your own.
+This blog is open source and lives on [GitHub](https://github.com/amita-shukla/blog-hugo). If you spot an issue or want to suggest an improvement, feel free to open an issue or fork it and make it your own.
