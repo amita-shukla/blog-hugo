@@ -1,5 +1,5 @@
 ---
-title: Evolution of Data Systems — From OLTP to OLAP
+title: Foundations of Data Systems: OLTP, OLAP, and What Came Next
 date: '2026-01-14'
 tags: 
 - BIG DATA
