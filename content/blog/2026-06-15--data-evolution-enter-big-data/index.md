@@ -13,7 +13,7 @@ author: Amita Shukla
 showTableOfContents: true
 cover: hadoop_ecosystem.jpeg
 ---
-In my previous post [Foundations of Data Systems: OLTP, OLAP, and What Came Next](https://amitashukla.in/blog/data-evolution-oltp-olap/), we discussed about OLTP and OLAP systems, and how they defined the early data landscape. Organizations relied on a combination of OLTP systems for operational workloads and data warehouses for analytics. This model worked well when data was primarily structured, generated at predictable rates, and could be processed in periodic batches. 
+In my previous post [Foundations of Data Systems: OLTP, OLAP, and What Came Next](https://amitashukla.in/blog/data-evolution-oltp-olap/), I talked about OLTP and OLAP systems, and how they defined the early data landscape. Organizations relied on a combination of OLTP systems for operational workloads and data warehouses for analytics. This model worked well when data was primarily structured, generated at predictable rates, and could be processed in periodic batches. 
 
 However, the growth of the internet fundamentally changed the nature of data. Organizations were no longer dealing with just transactional records and reporting tables. Websites, mobile applications, sensors, machine logs, clickstreams, and social media platforms began generating data at unprecedented scale.
 
@@ -27,7 +27,7 @@ This gave rise to a new generation of technologies collectively referred to as *
 
 ## Separation of Storage and Compute
 
-Early databases and data warehouses were built on a simple assumption: the machine storing the data would also process it. To scale a sucha a system, an organization had to scale the entire machine - where the storage and compute resources were tightly coupled.
+Early databases and data warehouses were built on a simple assumption: the machine storing the data would also process it. To scale a such a system, an organization had to scale the entire machine - where the storage and compute resources were tightly coupled.
 
 As organizations accumulated more data, however, a fundamental problem emerged. Storage and compute rarely grew at the same rate. For example, an organization might need to retain years of historical data, requiring additional storage capacity, but the computational requirements for querying that data might remain unchanged. Conversely, a team running a complex analytical workload might need more CPU and memory for a few hours, without requiring any additional storage.
 
@@ -259,7 +259,7 @@ The project includes these modules:
 - **Hadoop YARN**: A framework for job scheduling and cluster resource management.
 - **Hadoop MapReduce**: A YARN-based system for parallel processing of large data sets.
 
-Hadoop splits files into large blocks and distributes them across nodes in a cluster. It then transfers packaged code into nodes to process the data in parallel. This approach takes advantage of data locality where nodes manipulate the data they have access to.
+Hadoop splits files into large blocks and distributes them across nodes in a cluster. It then transfers packaged code into nodes to process the data in parallel. This approach takes advantage of data locality where nodes manipulate the data they have access to. The main mindset shift here from traditional computation is: **Instead of data shipped to where code lives, the code is shipped to where data lives.**
 
 ## HDFS
 Distributed file system designed to run on commodity hardware. That means it is highly fault tolerant and deployed on low-cost hardware.
@@ -267,7 +267,7 @@ Distributed file system designed to run on commodity hardware. That means it is 
 ![hdfs_architecture.jpeg](hdfs_architecture.jpeg)
 
 - It is a master slave architecture - an HDFS cluster is made of **NameNode** and **DataNodes**.
-- HDFS exposes a filesystem, namenode executes the fs operations. a user can upload a file to it using it.
+- HDFS exposes a filesystem, namenode executes the fs operations. a user can upload a file to it using these operations.
 - Internally, the file gets divided into one or more **blocks** and these blocks are stored in a set of datanodes. Namenode maintains the mapping of blocks to datanodes. The blocks are replicated for fault tolerance. Default HDFS block size is 128 MB.
 - Files in HDFS are write-once (except for appends and truncates) and have strictly one writer at any time.
 - The NameNode makes all decisions regarding replication of blocks. It periodically receives a **Heartbeat** and a **Blockreport** from each of the DataNodes in the cluster. Receipt of a Heartbeat implies that the DataNode is functioning properly. A Blockreport contains a list of all blocks on a DataNode.
