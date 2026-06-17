@@ -292,9 +292,9 @@ YARN is a resource allocator/ manager and job scheduler integrated with hadoop. 
 
 YARN is still used in Hadoop-based workloads but its popularity has declined due to:
 
-1. Rise of Cloud: Cloud-native solutions like Kubernetes manage resources better.
-2. Spark on Kubernetes: Spark workloads now often run directly on Kubernetes, bypassing YARN.
-3. Shift to Modern Data Architectures: Adoption of cloud warehouses (e.g., Snowflake) and serverless platforms reduces reliance on Hadoop ecosystems.
+- Rise of Cloud: Cloud-native solutions like Kubernetes manage resources better.
+- Spark on Kubernetes: Spark workloads now often run directly on Kubernetes, bypassing YARN.
+- Shift to Modern Data Architectures: Adoption of cloud warehouses (e.g., Snowflake) and serverless platforms reduces reliance on Hadoop ecosystems.
 
 While still relevant in legacy Hadoop deployments, **YARN is no longer as dominant as before**.
 
