@@ -243,3 +243,51 @@ MR is useful where stateless operations can be performed on rows:
 
 Word count is one of the simplest examples of MapReduce, but the same pattern can be applied to a wide range of large-scale data processing problems such as log analysis, inverted index generation, sessionization, joins, aggregations, and recommendation systems.
 
+## Hadoop
+
+While MapReduce defined how large-scale data processing could be expressed, it did not define where the data would live or how the computation would be orchestrated across a cluster. These challenges were addressed by Hadoop, an ecosystem that brought together distributed storage and distributed computation into a single platform.
+
+The project includes these modules:
+
+- **Hadoop Common**: The common utilities that support the other Hadoop modules.
+- **Hadoop Distributed File System (HDFS™)**: A distributed file system that provides high-throughput access to application data.
+- **Hadoop YARN**: A framework for job scheduling and cluster resource management.
+- **Hadoop MapReduce**: A YARN-based system for parallel processing of large data sets.
+
+Hadoop splits files into large blocks and distributes them across nodes in a cluster. It then transfers packaged code into nodes to process the data in parallel. This approach takes advantage of data locality where nodes manipulate the data they have access to.
+
+## HDFS
+Distributed file system designed to run on commodity hardware. That means it is highly fault tolerant and deployed on low-cost hardware.
+
+- It is a master slave architecture - an HDFS cluster is made of **NameNode** and **DataNodes**.
+- HDFS exposes a filesystem, namenode executes the fs operations. a user can upload a file to it using it.
+- Internally, the file gets divided into one or more **blocks** and these blocks are stored in a set of datanodes. Namenode maintains the mapping of blocks to datanodes. The blocks are replicated for fault tolerance. Default HDFS block size is 128 MB.
+- Files in HDFS are write-once (except for appends and truncates) and have strictly one writer at any time.
+- The NameNode makes all decisions regarding replication of blocks. It periodically receives a **Heartbeat** and a **Blockreport** from each of the DataNodes in the cluster. Receipt of a Heartbeat implies that the DataNode is functioning properly. A Blockreport contains a list of all blocks on a DataNode.
+- **Rack Awareness for replica placement** - For the common case, when the replication factor is three, HDFS’s placement policy is to put
+    - one replica on the local machine if the writer is on a datanode, otherwise on a random datanode in the same rack as that of the writer,
+    - another replica on a node in a different (remote) rack, and
+    - the last on a different node in the same remote rack.
+    
+    This policy cuts the inter-rack write traffic which generally improves write performance. The chance of rack failure is far less than that of node failure.
+
+## YARN
+
+YARN is a resource allocator/ manager and job scheduler integrated with hadoop. It allocates resources for running jobs in Hadoop.
+
+YARN is still used in Hadoop-based workloads but its popularity has declined due to:
+
+1. Rise of Cloud: Cloud-native solutions like Kubernetes manage resources better.
+2. Spark on Kubernetes: Spark workloads now often run directly on Kubernetes, bypassing YARN.
+3. Shift to Modern Data Architectures: Adoption of cloud warehouses (e.g., Snowflake) and serverless platforms reduces reliance on Hadoop ecosystems.
+
+While still relevant in legacy Hadoop deployments, **YARN is no longer as dominant as before**.
+
+### Difference b/w YARN and Zookeeper
+
+| **Aspect** | **YARN** | **ZooKeeper** |
+| --- | --- | --- |
+| **Purpose** | Resource management and job scheduling in Hadoop. | Coordination service for distributed systems. |
+| **Functionality** | Allocates cluster resources for running jobs. | Manages leader election, configuration, and locks. |
+| **Scope** | Part of Hadoop, specific to managing compute jobs. | Used by multiple distributed services (e.g., HBase, Kafka). |
+| **Dependency** | Integrated into the Hadoop ecosystem. | External to applications for synchronization. |
