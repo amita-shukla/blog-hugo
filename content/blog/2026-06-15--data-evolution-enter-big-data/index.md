@@ -20,6 +20,8 @@ The challenge was no longer just managing data — it was managing massive volum
 
 This gave rise to a new generation of technologies collectively referred to as **Big Data** -- instead of relying on larger and more powerful machines, these systems embraced horizontal scaling, distributing storage and computation across clusters of commodity hardware.
 
+![big_data_ecosystem.png](big_data_ecosystem.png)
+
 ## Separation of Storage and Compute
 
 Early databases and data warehouses were built on a simple assumption: the machine storing the data would also process it. To scale a sucha a system, an organization had to scale the entire machine - where the storage and compute resources were tightly coupled.
@@ -259,6 +261,8 @@ Hadoop splits files into large blocks and distributes them across nodes in a clu
 ## HDFS
 Distributed file system designed to run on commodity hardware. That means it is highly fault tolerant and deployed on low-cost hardware.
 
+![hdfs_architecture.png](hdfs_architecture.png)
+
 - It is a master slave architecture - an HDFS cluster is made of **NameNode** and **DataNodes**.
 - HDFS exposes a filesystem, namenode executes the fs operations. a user can upload a file to it using it.
 - Internally, the file gets divided into one or more **blocks** and these blocks are stored in a set of datanodes. Namenode maintains the mapping of blocks to datanodes. The blocks are replicated for fault tolerance. Default HDFS block size is 128 MB.
@@ -274,6 +278,14 @@ Distributed file system designed to run on commodity hardware. That means it is 
 ## YARN
 
 YARN is a resource allocator/ manager and job scheduler integrated with hadoop. It allocates resources for running jobs in Hadoop.
+
+### Components of Yarn
+
+![yarn_architecture.png](yarn_architecture.png)
+
+- ResourceManager: Master node that manages global resource allocation.
+- NodeManager: Slave node that monitors resources on individual nodes.
+- ApplicationMaster: Manages lifecycle of each individual application/job.
 
 YARN is still used in Hadoop-based workloads but its popularity has declined due to:
 
