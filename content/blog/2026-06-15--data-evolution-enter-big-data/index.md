@@ -264,7 +264,7 @@ Hadoop splits files into large blocks and distributes them across nodes in a clu
 ## HDFS
 Distributed file system designed to run on commodity hardware. That means it is highly fault tolerant and deployed on low-cost hardware.
 
-![hdfs_architecture.jpeg(hdfs_architecture.japeg)
+![hdfs_architecture.jpeg](hdfs_architecture.jpeg)
 
 - It is a master slave architecture - an HDFS cluster is made of **NameNode** and **DataNodes**.
 - HDFS exposes a filesystem, namenode executes the fs operations. a user can upload a file to it using it.
