@@ -1,16 +1,18 @@
 ---
 title: "When Data Outgrew Databases: Enter Big Data"
-date: '2026-06-15'
+date: '2026-06-17'
 tags: 
 - BIG DATA
 - DATABASE
+- HADOOP
+- MAPREDUCE
 type: post
 draft: false
 slug: data-evolution-enter-big-data
 author: Amita Shukla
 showTableOfContents: true
 ---
-In previous post ()[], we discussed about OLTP and OLAP systems, and how they defined the early data landscape. Organizations relied on a combination of OLTP systems for operational workloads and data warehouses for analytics. This model worked well when data was primarily structured, generated at predictable rates, and could be processed in periodic batches. 
+In my previous post [Foundations of Data Systems: OLTP, OLAP, and What Came Next](https://amitashukla.in/blog/data-evolution-oltp-olap/), we discussed about OLTP and OLAP systems, and how they defined the early data landscape. Organizations relied on a combination of OLTP systems for operational workloads and data warehouses for analytics. This model worked well when data was primarily structured, generated at predictable rates, and could be processed in periodic batches. 
 
 However, the growth of the internet fundamentally changed the nature of data. Organizations were no longer dealing with just transactional records and reporting tables. Websites, mobile applications, sensors, machine logs, clickstreams, and social media platforms began generating data at unprecedented scale.
 
