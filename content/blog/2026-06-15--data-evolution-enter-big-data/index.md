@@ -283,11 +283,9 @@ YARN is still used in Hadoop-based workloads but its popularity has declined due
 
 While still relevant in legacy Hadoop deployments, **YARN is no longer as dominant as before**.
 
-### Difference b/w YARN and Zookeeper
+## Hadoop is just the beginning 
+The emergence of Big Data marked a fundamental shift in how organizations approached data processing. Instead of relying on increasingly powerful machines, systems began embracing clusters of commodity hardware, distributing both storage and computation across hundreds or thousands of nodes. Concepts such as horizontal scaling, fault tolerance, data locality, and parallel processing became first-class citizens in data architecture.
 
-| **Aspect** | **YARN** | **ZooKeeper** |
-| --- | --- | --- |
-| **Purpose** | Resource management and job scheduling in Hadoop. | Coordination service for distributed systems. |
-| **Functionality** | Allocates cluster resources for running jobs. | Manages leader election, configuration, and locks. |
-| **Scope** | Part of Hadoop, specific to managing compute jobs. | Used by multiple distributed services (e.g., HBase, Kafka). |
-| **Dependency** | Integrated into the Hadoop ecosystem. | External to applications for synchronization. |
+At the heart of this movement was the Hadoop ecosystem. HDFS provided distributed storage, MapReduce offered a model for large-scale computation, and YARN enabled efficient resource management across a cluster. Together, these technologies laid the foundation for processing datasets that were simply too large for traditional systems to handle economically.
+
+However, Hadoop was only the beginning. As data workloads evolved, organizations demanded faster processing, more familiar interfaces, and better support for interactive analytics. This led to the rise of a rich ecosystem of tools built on top of Hadoop—bringing SQL, real-time processing, machine learning, and improved developer productivity to the world of Big Data.
