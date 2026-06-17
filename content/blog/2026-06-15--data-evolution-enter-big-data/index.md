@@ -159,4 +159,87 @@ Reduce
 Output
 ```
 
+This is how the code looks like in Java (I know it's verbose, but like a typical java code, a lot of it is boilerplate):
+
+```java
+public class WordCount {
+
+  public static class TokenizerMapper
+       extends Mapper<Object, Text, Text, IntWritable>{
+
+    private final static IntWritable one = new IntWritable(1);
+    private Text word = new Text();
+
+    public void map(Object key, Text value, Context context
+                    ) throws IOException, InterruptedException {
+      StringTokenizer itr = new StringTokenizer(value.toString());
+      while (itr.hasMoreTokens()) {
+        word.set(itr.nextToken());
+        context.write(word, one);
+      }
+    }
+  }
+
+  public static class IntSumReducer
+       extends Reducer<Text,IntWritable,Text,IntWritable> {
+    private IntWritable result = new IntWritable();
+
+    public void reduce(Text key, Iterable<IntWritable> values,
+                       Context context
+                       ) throws IOException, InterruptedException {
+      int sum = 0;
+      for (IntWritable val : values) {
+        sum += val.get();
+      }
+      result.set(sum);
+      context.write(key, result);
+    }
+  }
+
+  public static void main(String[] args) throws Exception {
+    Configuration conf = new Configuration();
+    Job job = Job.getInstance(conf, "word count");
+    job.setJarByClass(WordCount.class);
+    job.setMapperClass(TokenizerMapper.class);
+    job.setCombinerClass(IntSumReducer.class); // same as reducer, but runs aggregation locally on the output of each mapper
+    job.setReducerClass(IntSumReducer.class);
+    job.setOutputKeyClass(Text.class);
+    job.setOutputValueClass(IntWritable.class);
+    FileInputFormat.addInputPath(job, new Path(args[0]));
+    FileOutputFormat.setOutputPath(job, new Path(args[1]));
+    System.exit(job.waitForCompletion(true) ? 0 : 1);
+  }
+}
+```
+PS: to sort the rows by count desc in the above program, you would need to:
+
+- write a custom output class, e.g. `WordCountPair` as the key class, and then redefine sorting method.
+- change the mapper: `TokenizeMapper extends Mapper<Object, Text, WordCountPair, NullWritable> {`
+- change the reducer: `IntSumReducer extends Reducer<WordCountPair, NullWritable, Text, IntWritable> {`
+- set:
+```java
+job.setMapperClass(TokenizeMapper.class);
+job.setCombinerClass(IntSumReducer.class);
+job.setReducerClass(IntSumReducer.class);
+job.setMapOutputKeyClass(WordCountPair.class);
+job.setMapOutputValueClass(NullWritable.class);
+job.setOutputKeyClass(Text.class);
+job.setOutputValueClass(IntWritable.class);
+```
+- and run:
+```bash
+hadoop jar wordcount.jar WordCount /input /output
+```
+
+### How to solve common problems with MR?
+
+Conventional problems are not designed around memory independence. e.g. aggregations over millions of rows, one one hand DBMS would be resource intensive, MR can be quicker. 
+
+MR is useful where stateless operations can be performed on rows:
+
+- `select + where` pattern, e.g. count number of people > age 30
+- joins
+- aggregation functions
+
 Word count is one of the simplest examples of MapReduce, but the same pattern can be applied to a wide range of large-scale data processing problems such as log analysis, inverted index generation, sessionization, joins, aggregations, and recommendation systems.
+
