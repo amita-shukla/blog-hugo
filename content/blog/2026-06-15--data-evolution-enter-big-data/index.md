@@ -11,6 +11,7 @@ draft: false
 slug: data-evolution-enter-big-data
 author: Amita Shukla
 showTableOfContents: true
+cover: hadoop_ecosystem.jpeg
 ---
 In my previous post [Foundations of Data Systems: OLTP, OLAP, and What Came Next](https://amitashukla.in/blog/data-evolution-oltp-olap/), we discussed about OLTP and OLAP systems, and how they defined the early data landscape. Organizations relied on a combination of OLTP systems for operational workloads and data warehouses for analytics. This model worked well when data was primarily structured, generated at predictable rates, and could be processed in periodic batches. 
 
@@ -22,7 +23,7 @@ The challenge was no longer just managing data — it was managing massive volum
 
 This gave rise to a new generation of technologies collectively referred to as **Big Data** -- instead of relying on larger and more powerful machines, these systems embraced horizontal scaling, distributing storage and computation across clusters of commodity hardware.
 
-![big_data_ecosystem.png](big_data_ecosystem.png)
+![hadoop_ecosystem.jpeg](hadoop_ecosystem.jpeg)
 
 ## Separation of Storage and Compute
 
@@ -263,7 +264,7 @@ Hadoop splits files into large blocks and distributes them across nodes in a clu
 ## HDFS
 Distributed file system designed to run on commodity hardware. That means it is highly fault tolerant and deployed on low-cost hardware.
 
-![hdfs_architecture.png](hdfs_architecture.png)
+![hdfs_architecture.jpeg](hdfs_architecture.japeg)
 
 - It is a master slave architecture - an HDFS cluster is made of **NameNode** and **DataNodes**.
 - HDFS exposes a filesystem, namenode executes the fs operations. a user can upload a file to it using it.
@@ -283,7 +284,7 @@ YARN is a resource allocator/ manager and job scheduler integrated with hadoop. 
 
 ### Components of Yarn
 
-![yarn_architecture.png](yarn_architecture.png)
+![yarn_architecture.jpeg](yarn_architecture.jpeg)
 
 - ResourceManager: Master node that manages global resource allocation.
 - NodeManager: Slave node that monitors resources on individual nodes.
