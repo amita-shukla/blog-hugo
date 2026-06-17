@@ -1,5 +1,5 @@
 ---
-title: "Enter Big Data"
+title: "When Data Outgrew Databases: Enter Big Data"
 date: '2026-06-15'
 tags: 
 - BIG DATA
