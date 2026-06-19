@@ -98,7 +98,7 @@ STORE output INTO '/tmp/admin/pig_wordcount';
 
 > As of 2020: “Note for current readers: Pig has not seen much innovation and is considered deprecated by many.”
 
-### Impala
+## Impala
 
 While Hadoop and Hive won over traditional data warehouses over scale, flexibility and cost, Hive was still slow. The ecosystem spent the next decade trying to recover the performance and usability that the traditional data warehouses had. 
 
@@ -136,7 +136,7 @@ Key characteristics:
 - Heavy use of memory
 - MPP-style parallelism
 
-### Modern Hive v/s Impala
+## Modern Hive v/s Impala
 
 Modern Hive is much faster than classic Hive.
 Both have created their own space in the big data world. The distinction today is less about speed and more about workload type:
