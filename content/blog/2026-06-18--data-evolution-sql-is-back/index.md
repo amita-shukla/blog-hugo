@@ -35,7 +35,7 @@ GROUP BY word
 ORDER BY count DESC;
 ```
 
-With Hadoop, a SQL query earlier run by a business analyst now needed a software engineer to write and deploy the same job. Hence, as Hadoop adoption grew, there was a strong demand for a SQL interface on top of distributed data.
+With Hadoop, a SQL query earlier run by a business analyst now needed a software engineer to write and deploy the same job. For decades, analysts, BI tools, and data teams had relied on SQL as the universal language for querying data. The industry did not want to abandon SQL; it wanted SQL to work at Big Data scale. Hence, as Hadoop adoption grew, there was a strong demand for a SQL interface on top of distributed data.
 This problem gave rise to **Hive — sql for Hadoop**, and **Pig — scripting for hadoop**.
 
 ## Hive - SQL translated into map reduce
@@ -156,3 +156,19 @@ Users commonly use Hue to run Impala queries.
 ## Hue
 
 Hue is the SQL workbench for optimised, interactive query design and data exploration, a UI to interact with hadoop tools. It allows user to write queries, using SQL engines like Hive, Impala or Presto (now maintained as trino).
+
+## Hadoop learned from DWs and DWs learned from Hadoop
+
+Overtime, the two worlds started converging.
+Modern systems like Snowflake, Google BigQuery, Amazon Redshift borrowed many ideas from Hadoop:
+- Cheap storage
+- Separation of storage and compute
+- Massive parallelism
+- Semi-structured data support
+
+Meanwhile Hadoop engines like Impala borrowed ideas from warehouses:
+- MPP execution
+- Vectorized processing
+- Cost-based optimization
+
+In many ways, the history of Big Data is not the story of replacing SQL. It is the story of adapting SQL to a world where data had outgrown the limits of a single machine. The innovations that followed would continue this trend, focusing on faster execution engines, richer processing capabilities, and more efficient ways to store and analyze data at scale.
