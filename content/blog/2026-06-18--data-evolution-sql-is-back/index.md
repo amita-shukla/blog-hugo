@@ -118,6 +118,7 @@ Impala was created to address a different problem: what if users want answers in
 Instead of translating SQL into MapReduce jobs, Impala executes SQL queries directly on the cluster, allowing users to explore large datasets with response times measured in seconds rather than minutes.
 
 It uses Massively Parallel Processing (MPP) - used by Redshift, Bigquery, Snowflake as well.
+![impala_architecture.png](impala_architecture.png)
 
 When a query arrives:
 - A coordinator node parses and optimizes the query.
