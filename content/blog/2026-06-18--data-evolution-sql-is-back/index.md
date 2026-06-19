@@ -46,7 +46,7 @@ Hive allowed organizations to define a schema to their underlying data and run S
 
 Though Hive is used for structured data, it seamlessly integrated with other bigdata pipelines. Currently it uses MapReduce, Tez or Spark for query execution. Modern Hive running on spark / tez is much faster than classic Hive.
 
-### Some Give Features
+### Some Hive Features
 - supports JDBC/ODBC drivers.
 - best for batch processing and ETL jobs.
 - Relies on metastore for schema storage. This is a relational database (e.g. MySQL, PostgreSQL, or Derby (embedded)).
