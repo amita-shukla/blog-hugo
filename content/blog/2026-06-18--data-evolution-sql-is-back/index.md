@@ -1,6 +1,6 @@
 ---
 title: "Querying Big Data — SQL Makes a Comeback"
-date: '2026-06-20'
+date: '2026-06-19'
 tags: 
 - BIG DATA
 - DATABASE
