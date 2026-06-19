@@ -24,7 +24,7 @@ However, coding this problem as an MR job was cumbersome. An MR job written in J
 - Jar
 - Submit Job
 
-Consider if the word count problem is modelled into a relational table. The words can be saved into a table in postgres, `lines_table`, containing each row as a line in the table, the column being `lines`, then below code is all that would be needed to run on Postgres:
+Consider the word count problem modelled on a relational table. The words can be saved into a table in postgres, `lines_table`, containing each row as a line in the table, the column being `lines`. Then the below code is all that would be needed to run on Postgres:
 ```sql
 SELECT word, COUNT(*) AS count
 FROM (
@@ -35,17 +35,18 @@ GROUP BY word
 ORDER BY count DESC;
 ```
 
-A SQL query run by a business analyst now needed a software engineer to write and deploy the same job. Hence, as Hadoop adoption grew, there was a strong demand for a SQL interface on top of distributed data.
-This problem gave rise to Hive — sql for Hadoop, and Pig — scripting for hadoop.
+With Hadoop, a SQL query earlier run by a business analyst now needed a software engineer to write and deploy the same job. Hence, as Hadoop adoption grew, there was a strong demand for a SQL interface on top of distributed data.
+This problem gave rise to **Hive — sql for Hadoop**, and **Pig — scripting for hadoop**.
 
 ## Hive - SQL translated into map reduce
 
-Hive is essentially a datawarehouse with hiveql / hql - a sql like interface - to query HDFS data.
+Hive is essentially a data warehouse with HiveQL or **HQL** -- a sql like interface to query HDFS data.
 
 Hive allowed organizations to define a schema to their underlying data and run SQL queries on data, while offloading the headache of running MR job to Hive itself. The Hive compiler would generate MapReduce jobs behind the scenes.
 
-Though Hive is used for structured data, it seamlessly integrated with other bigdata pipelines. Currently it uses MapReduce, Tez or Spark for query execution. Modern Give running on spark / tex is much faster than 
+Though Hive is used for structured data, it seamlessly integrated with other bigdata pipelines. Currently it uses MapReduce, Tez or Spark for query execution. Modern Hive running on spark / tez is much faster than classic Hive.
 
+### Some Give Features
 - supports JDBC/ODBC drivers.
 - best for batch processing and ETL jobs.
 - Relies on metastore for schema storage. This is a relational database (e.g. MySQL, PostgreSQL, or Derby (embedded)).
@@ -79,13 +80,11 @@ CREATE TABLE word_count AS
     SORT BY count DESC;
 ```
 
-- 2 types: Managed and EXTERNAL tables. In a managed table, data gets deleted when table is deleted.
+- 2 types: Managed and EXTERNAL tables. In a managed table, data gets deleted when the corresponding table is deleted.
 
 ## Pig
 
 What hive is for structured data, Pig is for un/semi-structured data. 
-
-As of 2020: “Note for current readers: Pig has not seen much innovation and is considered deprecated by many.”
 
 Pig uses a procedural language PigLatin. It is a scripting language for describing operations like reading, filtering, transforming, joining and writing data. It runs map reduce jobs underneath.
 
@@ -96,12 +95,14 @@ grouped = GROUP words by word;
 output = FOREACH grouped GENERATE group, COUNT(words);
 STORE output INTO '/tmp/admin/pig_wordcount';
 ```
+
+> As of 2020: “Note for current readers: Pig has not seen much innovation and is considered deprecated by many.”
+
 ### Impala
 
-While Hadoop and Hive won over traditional data warehouses over scale, flexibility and cost, Hive still was massively slow. The ecosystem spent the next decade trying to recover the performance and usability that the traditional data warehouses had. 
+While Hadoop and Hive won over traditional data warehouses over scale, flexibility and cost, Hive was still slow. The ecosystem spent the next decade trying to recover the performance and usability that the traditional data warehouses had. 
 
-While Hive enabled SQL, the queries were massively slow, because each Hive query run required a lot of setup overhead:
-
+While Hive was excellent to run ETL jobs that can run nightly over very high amounts of data, each Hive query job required a lot of setup overhead:
 - Submit query
 - Generate MR job
 - Launch containers
@@ -109,21 +110,20 @@ While Hive enabled SQL, the queries were massively slow, because each Hive query
 - Aggregate
 - Return Result
 
-Hive was excellent to run ETL jobs that can run nightly over very high amounts of data.
 
-Impala was created to address a different problem: what if users want answers in seconds instead of minutes. Instead of converting SQL into MapReduce jobs, Impala executes queries directly.
+Impala was created to address a different problem: __what if users want answers in seconds instead of minutes?__ 
 
 ### Impala Architecture
 
 Instead of translating SQL into MapReduce jobs, Impala executes SQL queries directly on the cluster, allowing users to explore large datasets with response times measured in seconds rather than minutes.
 
-It uses Massively Parallel Processing (MPP) - used by Redshift, Bigquery, Snowflake as well.
+It uses **Massively Parallel Processing (MPP)** - used by Redshift, Bigquery, Snowflake as well.
 ![impala_architecture.png](impala_architecture.png)
 
 When a query arrives:
 - A coordinator node parses and optimizes the query.
 - The query plan is split into fragments.
-- Fragments are distributed to worker nodes (impalad daemons).
+- Fragments are distributed to worker nodes (`impalad` daemons).
 - Each node processes its local data in parallel.
 - Partial results are exchanged and aggregated.
 - Final results are returned to the client.
@@ -151,10 +151,8 @@ Think of a data warehouse team.
 - Hive : "Generate yesterday's sales report for all countries and store it”. Runs every night.
 - Impala: "Show me today's sales for Europe right now”. Analyst waiting at a dashboard.
 
-May use Hue to run Impala queries.
-
-## Spark SQL
+Users commonly use Hue to run Impala queries.
 
 ## Hue
 
-Hue is SQL workbench for optimised, interactive query design and data exploration. Hue is a UI to interact with hadoop tools. It allows user to write queries, using SQL engines like Hive, Impala or Presto (now maintained as trino).
+Hue is the SQL workbench for optimised, interactive query design and data exploration. Hue is a UI to interact with hadoop tools. It allows user to write queries, using SQL engines like Hive, Impala or Presto (now maintained as trino).
