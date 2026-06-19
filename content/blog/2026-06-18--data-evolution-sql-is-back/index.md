@@ -157,10 +157,9 @@ Users commonly use Hue to run Impala queries.
 
 Hue is the SQL workbench for optimised, interactive query design and data exploration, a UI to interact with hadoop tools. It allows user to write queries, using SQL engines like Hive, Impala or Presto (now maintained as trino).
 
-## Hadoop learned from DWs and DWs learned from Hadoop
+## How Hadoop and Data Warehouses Influenced Each Other
 
-Overtime, the two worlds started converging.
-Modern systems like Snowflake, Google BigQuery, Amazon Redshift borrowed many ideas from Hadoop:
+Overtime, the two worlds of Hadoop and DWs started converging. Modern systems like Snowflake, Google BigQuery, Amazon Redshift borrowed many ideas from Hadoop:
 - Cheap storage
 - Separation of storage and compute
 - Massive parallelism
