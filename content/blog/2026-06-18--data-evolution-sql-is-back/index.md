@@ -14,7 +14,7 @@ author: Amita Shukla
 showTableOfContents: true
 ---
 
-Consider the word count example from my previous post [](). The problem is simple: Count the frequency of each unique word in a huge file. We solved the problem using MapReduce, which made it solvable efficiently. 
+Consider the word count example from my previous post [](). The problem is simple: Count the frequency of each unique word in a huge file. We solved the problem using MapReduce, which allowed it to be processed efficiently at scale. 
 
 However, coding this problem as an MR job was cumbersome. An MR job written in Java contains:
 - Mapper
@@ -102,7 +102,7 @@ STORE output INTO '/tmp/admin/pig_wordcount';
 
 While Hadoop and Hive won over traditional data warehouses over scale, flexibility and cost, Hive was still slow. The ecosystem spent the next decade trying to recover the performance and usability that the traditional data warehouses had. 
 
-While Hive was excellent to run ETL jobs that can run nightly over very high amounts of data, each Hive query job required a lot of setup overhead:
+Hive was excellent to run ETL jobs that can run nightly over very high amounts of data. But each Hive query job required a lot of setup overhead:
 - Submit query
 - Generate MR job
 - Launch containers
@@ -155,4 +155,4 @@ Users commonly use Hue to run Impala queries.
 
 ## Hue
 
-Hue is the SQL workbench for optimised, interactive query design and data exploration. Hue is a UI to interact with hadoop tools. It allows user to write queries, using SQL engines like Hive, Impala or Presto (now maintained as trino).
+Hue is the SQL workbench for optimised, interactive query design and data exploration, a UI to interact with hadoop tools. It allows user to write queries, using SQL engines like Hive, Impala or Presto (now maintained as trino).
