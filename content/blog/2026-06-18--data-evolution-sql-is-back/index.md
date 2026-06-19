@@ -111,7 +111,7 @@ While Hive was excellent to run ETL jobs that can run nightly over very high amo
 - Return Result
 
 
-Impala was created to address a different problem: __what if users want answers in seconds instead of minutes?__ 
+Impala was created to address a different problem: _what if users want answers in seconds instead of minutes?_
 
 ### Impala Architecture
 
