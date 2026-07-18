@@ -1,5 +1,5 @@
 ---
-title: "Authentication and Authorisation Explained"
+title: "Authentication and Authorization Explained"
 date: '2026-07-18'
 tags: 
 - SECURITY
