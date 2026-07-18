@@ -378,3 +378,65 @@ Authentication mechanisms rely on supporting infrastructure to store users, grou
 - **Notes**
     - Every Kerberos environment has one or more KDCs.
 
+# Authentication Artifacts
+
+### *What do I receive after successfully authenticating?*
+
+Once you've successfully authenticated, systems rarely ask you to prove your identity again on every request. Instead, they issue a temporary credential or artifact that can be presented to other services. These credentials are typically time-limited and may also carry authorization information.
+
+## Sessions & Cookies
+
+- **Why does it exist?**
+    - To avoid asking users to authenticate on every HTTP request.
+- **Used for**
+    - Maintaining authenticated user sessions in web applications.
+- **What is it?**
+    - A session stores authentication information on the server, while a session cookie stores only a unique session identifier in the user's browser.
+- **How does it work?**
+    1. The user successfully logs in.
+    2. The server creates a session and stores it.
+    3. The server sends a session cookie containing the session ID.
+    4. The browser automatically includes the cookie in future requests.
+    5. The server looks up the session and recognizes the user.
+- **Pros**
+    - Simple and secure.
+    - Session data remains on the server.
+    - Easy to revoke.
+- **Cons**
+    - Requires server-side session storage.
+    - Doesn't scale as easily across multiple servers without shared session storage.
+- **Common examples**
+    - Traditional web applications
+    - Banking websites
+    - E-commerce websites
+- **Notes**
+    - Cookies are not the session itself—they simply contain the session identifier.
+
+## Bearer Tokens
+
+- **Why does it exist?**
+    - To allow clients to prove they've already authenticated without maintaining server-side sessions.
+- **Used for**
+    - Authenticating API requests.
+- **What is it?**
+    - A Bearer Token is a token that grants access simply by being presented. Whoever possesses the token can use it.
+- **How does it work?**
+    1. The client obtains a token after authentication.
+    2. The client sends the token in the `Authorization: Bearer <token>` header.
+    3. The server validates the token.
+    4. If valid, the request is processed.
+- **Pros**
+    - Stateless.
+    - Well suited for APIs.
+    - Easy to use across distributed systems.
+- **Cons**
+    - Anyone possessing the token can use it.
+    - Must always be transmitted over HTTPS.
+- **Common examples**
+    - REST APIs
+    - Mobile applications
+    - Microservices
+- **Notes**
+    - **Bearer** describes **how a token is used**, not what the token contains. A Bearer Token is often a JWT, but it doesn't have to be.
+
+
