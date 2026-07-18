@@ -1,10 +1,10 @@
 ---
-title: "Authentication and Authorisation Mechanisms"
+title: "Authentication and Authorisation Explained"
 date: '2026-07-18'
 tags: 
 - SECURITY
 type: post
-draft: true
+draft: false
 slug: authentication-authorization-mechanisms
 author: Amita Shukla
 showTableOfContents: true
@@ -824,3 +824,5 @@ GitHub API
 - The PAT is sent with API requests.
 - GitHub authenticates the token.
 - The token's permissions determine which operations are allowed.
+
+Authentication and authorization are vast topics, but as software engineers, but what matters is understanding the role each technology plays—whether it's verifying identity, storing user information, issuing credentials, or controlling access to resources. With this mental model,I hope terms like OAuth, OIDC, Kerberos, JWT, LDAP, and RBAC become much less intimidating, making it easier to design, integrate, and troubleshoot secure applications in your day-to-day work.
