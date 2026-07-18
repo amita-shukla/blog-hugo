@@ -1,4 +1,14 @@
-------
+---
+title: "Authentication and Authorisation Mechanisms"
+date: '2026-07-18'
+tags: 
+- SECURITY
+type: post
+draft: true
+slug: authentication-authorization-mechanisms
+author: Amita Shukla
+showTableOfContents: true
+---
 You join a new company. On day 1, you're  asked to:
 
 - Log into your laptop using a password.
