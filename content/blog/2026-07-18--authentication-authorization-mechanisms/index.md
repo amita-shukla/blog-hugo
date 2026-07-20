@@ -114,7 +114,9 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Enterprise SSO
 - **Notes**
     - OAuth 2.0 is an authorization framework, while **OIDC adds authentication** on top of OAuth.
-    - Although often referred to together, they solve different problems.
+    - Although often referred to together, they solve different problems. OAuth returns an Access Token (for accessing APIs) and OIDC returns an ID token (for identifying a user)
+
+
 ## SAML
 
 - **Why does it exist?**
