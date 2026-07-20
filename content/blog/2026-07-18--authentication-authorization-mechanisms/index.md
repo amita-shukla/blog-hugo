@@ -19,7 +19,7 @@ You join a new company. On day 1, you're  asked to:
 - Call a cloud API using an Access Token.
 
 Suddenly you're surrounded by terms like OAuth, OIDC, JWT, Kerberos, LDAP, SAML, API Keys, Service Accounts, Bearer Tokens, and RBAC. They all seem related, yet each serves a different purpose.
-This post aims to untangle that vocabulary and show how these pieces fit together.
+This post aims to untangle that vocabulary and show how these pieces fit together. I wrote a post on [Authentication v/s Authorization](https://amitashukla.in/blog/authentication-different-from-authorization/) 10 years ago. Both me and the industry has come a long way since then. Let's dive in.
 
 ## Authentication
 
