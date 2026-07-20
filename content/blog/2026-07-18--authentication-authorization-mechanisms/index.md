@@ -175,6 +175,7 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - CI/CD automation
 - **Notes**
     - The private key never leaves the client's machine.
+
 ## Client Certificates
 
 - **Why does it exist?**
@@ -199,9 +200,11 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Mutual TLS
     - Enterprise VPNs
     - Financial systems
-    - Internal APIs
+    - Internal APIs, microservices 
 - **Notes**
-    - Client certificates are commonly used as part of **mTLS**, which you'll see below in the Authentication Protocols section.
+    - Client certificates are commonly used as part of **mTLS**, as we will see below.
+    - SSH is commonly used where we both control the client and server, whereas Client Certificates are used where many clients and servers need to trust each other without manual intervention. 
+
 ## API Keys
 
 - **Why does it exist?**
