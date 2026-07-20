@@ -613,7 +613,7 @@ In highly secure environments, it's not enough for only one side to prove its id
 
 ## Authorization
 
-### *Now that I know who you are, what are you allowed to do?*
+#### *Now that I know who you are, what are you allowed to do?*
 
 Authentication verifies **who you are**. Authorization determines **what you're allowed to do**. After a user or service has been authenticated, the system evaluates roles, permissions, attributes, or policies before granting access to a resource.
 
