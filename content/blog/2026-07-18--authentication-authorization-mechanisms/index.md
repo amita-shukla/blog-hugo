@@ -84,9 +84,7 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Windows Active Directory domains
     - Hadoop ecosystem (Hive, HDFS, Impala)
     - Enterprise intranets
-- **Notes**
-    - Kerberos uses **tickets**, not tokens.
-    - The KDC acts as the trusted authority that issues these tickets.
+
 ## OAuth + OpenID Connect (OIDC)
 
 - **Why does it exist?**
