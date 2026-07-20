@@ -293,7 +293,7 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Internal microservices
     - Kubernetes control plane
 - **Notes**
-    - TLS encrypts communication. **mTLS adds authentication in both directions**, ensuring both parties can trust each other's identity.
+    - TLS encrypts communication. mTLS adds authentication in both directions, ensuring both parties can trust each other's identity.
 
 ## Identity Stores & Authentication Infrastructure
 
@@ -471,7 +471,7 @@ Once you've successfully authenticated, systems rarely ask you to prove your ide
     - Microsoft Graph
     - Kubernetes APIs
 - **Notes**
-    - An Access Token is often sent as a **Bearer Token** and is frequently represented as a **JWT**.
+    - An Access Token is often sent as a Bearer Token and is frequently represented as a JWT.
 
 ### Refresh Tokens
 
@@ -497,7 +497,7 @@ Once you've successfully authenticated, systems rarely ask you to prove your ide
     - Single Page Applications (SPAs)
     - Long-running user sessions
 - **Notes**
-    - Refresh Tokens are **not** sent with every API request. They are only used to obtain new Access Tokens.
+    - Refresh Tokens are not sent with every API request. They are only used to obtain new Access Tokens.
 
 ### JSON Web Tokens (JWT)
 
@@ -597,11 +597,11 @@ Instead of manually registering everyone, the building trusts identity cards iss
 
 **"Show me your membership card."**
 
-When you enter a gym, you present your membership card. The receptionist checks that it's valid and associates it with your membership. Anyone having a membership card can enter. Your own identity is not verified.
+You present your membership card when you enter the building. The receptionist checks that it's valid and associates it with your membership. Anyone having a membership card can enter. Your own identity is not verified.
 
 ### Service Accounts
 
-**"I know you're not a person—you're the delivery robot."**
+**"You're not human but a robot."**
 
 Some visitors aren't humans at all. They are trusted machines performing automated work. Instead of human credentials, they use machine identities known as Service Accounts.
 
