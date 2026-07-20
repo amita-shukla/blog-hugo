@@ -113,8 +113,8 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Sign in with GitHub
     - Enterprise SSO
 - **Notes**
-    - OAuth 2.0 is an authorization framework, while **OIDC adds authentication** on top of OAuth.
-    - Although often referred to together, they solve different problems. OAuth returns an Access Token (for accessing APIs) and OIDC returns an ID token (for identifying a user)
+    - OAuth 2.0 is an authorization framework, while OIDC adds authentication on top of OAuth.
+    - Although often referred to together, they solve different problems. OAuth returns an Access Token (for accessing APIs) while OIDC returns an ID token (for identifying a user).
 
 
 ## SAML
@@ -145,7 +145,9 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Corporate web portals
     - Enterprise SaaS applications
 - **Notes**
-    - SAML and OIDC solve similar problems. SAML is more common in traditional enterprise environments, while OIDC is more common in modern web and mobile applications.
+    - SAML and OIDC solve the same problem. SAML is more common in traditional enterprise environments, while OIDC is more common in modern web and mobile applications.
+    - SAML uses verbose XML SAML assertion while OIDC uses json or JWTs.
+
 ## SSH Keys
 
 - **Why does it exist?**
