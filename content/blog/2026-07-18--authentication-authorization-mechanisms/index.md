@@ -297,7 +297,7 @@ Authentication begins by verifying the identity of the caller. Depending on whet
 
 ## Identity Stores & Authentication Infrastructure
 
-#### Where are identities stored and managed?
+#### *Where are identities stored and managed?*
 
 Authentication mechanisms rely on supporting infrastructure to store users, groups, passwords, certificates, and other identity information. These systems act as the source of truth that applications consult while authenticating users and services.
 
