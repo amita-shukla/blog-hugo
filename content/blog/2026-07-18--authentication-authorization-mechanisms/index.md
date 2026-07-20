@@ -21,8 +21,6 @@ You join a new company. On day 1, you're  asked to:
 Suddenly you're surrounded by terms like OAuth, OIDC, JWT, Kerberos, LDAP, SAML, API Keys, Service Accounts, Bearer Tokens, and RBAC. They all seem related, yet each serves a different purpose.
 This post aims to untangle that vocabulary and show how these pieces fit together.
 
-> This is my first post which has made such a heavy use of AI. I used AI to research and structure this, but I have tried my best to ensure the accuracy of the post. I wanted to use this post as a reference material, hence a bullet point structure, but have tried to go into depth whenever needed. The analogy for each mechanism is my favourite part that I believe really drives home the concepts. I am still developing my philosophy on upto what extent AI should be used for writing. Would love your opinion and review!
-
 ## Authentication
 
 #### *How do I prove who I am?*
@@ -877,3 +875,5 @@ GitHub API
 - The token's permissions determine which operations are allowed.
 
 Authentication and authorization are vast topics, but as software engineers, what matters is understanding the role each technology plays—whether it's verifying identity, storing user information, issuing credentials, or controlling access to resources. With this mental model,I hope terms like OAuth, OIDC, Kerberos, JWT, LDAP, and RBAC become much less intimidating, making it easier to design, integrate, and troubleshoot secure applications in your day-to-day work.
+
+> This is my first post which has made such a heavy use of AI. I used AI to research and structure this, but I have tried my best to ensure the accuracy of the post. I wanted to use this post as a reference material, hence a bullet point structure, but have tried to go into depth whenever needed. The analogy for each mechanism is my favourite part that I believe really drives home the concepts. I am still developing my philosophy on upto what extent AI should be used for writing. Would love your opinion and review!
