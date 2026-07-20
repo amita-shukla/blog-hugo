@@ -29,12 +29,7 @@ Authentication begins by verifying the identity of the caller. Depending on whet
 
 ### Password
 
-- **Why does it exist?**
-    - To provide a simple way for a user to prove their identity using a secret known only to them and the authentication server.
-- **Used for**
-    - Human authentication.
-- **What is it?**
-    - A password is a secret string shared between a user and the authentication system. The user proves their identity by demonstrating knowledge of this secret.
+A password is a secret string shared between a user and the authentication system. The user proves their identity by demonstrating knowledge of this secret. It is one of the simplest and oldest way to prove one's identity.
 - **How does it work?**
     1. The user enters their username and password.
     2. The server retrieves the stored password hash for that user.
@@ -44,7 +39,6 @@ Authentication begins by verifying the identity of the caller. Depending on whet
 - **Pros**
     - Simple and universally supported.
     - Easy to implement.
-    - No additional infrastructure required.
 - **Cons**
     - Vulnerable to phishing, brute-force attacks, and password reuse.
     - Users often choose weak passwords.
@@ -145,8 +139,7 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - Corporate web portals
     - Enterprise SaaS applications
 - **Notes**
-    - SAML and OIDC solve the same problem. SAML is more common in traditional enterprise environments, while OIDC is more common in modern web and mobile applications.
-    - SAML uses verbose XML SAML assertion while OIDC uses json or JWTs.
+    - SAML and OIDC solve the same problem. SAML is more common in traditional enterprise environments, while OIDC is more common in modern web and mobile applications. SAML uses verbose XML SAML assertion while OIDC uses json or JWTs.
 
 ### SSH Keys
 
@@ -173,8 +166,6 @@ Authentication begins by verifying the identity of the caller. Depending on whet
     - SSH login to Linux servers
     - GitHub authentication via SSH
     - CI/CD automation
-- **Notes**
-    - The private key never leaves the client's machine.
 
 ### Client Certificates
 
@@ -557,11 +548,7 @@ Once you've successfully authenticated, systems rarely ask you to prove your ide
 
 ## A Simple Analogy to Understand Authentication
 
-Let's imagine a security guard standing at the entrance of a building. Every person or service that wants to enter must answer one simple question:
-
-#### *"Why should I believe you are who you claim to be?"*
-
-Different authentication mechanisms answer this question in different ways.
+Let's imagine a security guard standing at the entrance of a building. Different authentication mechanisms answer this question in different ways.
 
 ### Password
 
