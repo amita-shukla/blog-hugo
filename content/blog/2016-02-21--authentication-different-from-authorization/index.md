@@ -1,6 +1,7 @@
 ---
 title: How is Authentication different from Authorization?
-tags: []
+tags:
+- SECURITY
 author: Amita Shukla
 date: '2016-02-21'
 slug: authentication-different-from-authorization
