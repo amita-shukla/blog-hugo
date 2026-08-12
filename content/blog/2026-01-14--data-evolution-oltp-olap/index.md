@@ -125,3 +125,5 @@ Despite their strengths, early OLTP and OLAP systems were fundamentally constrai
 These unresolved challenges created the conditions for a new class of systems — ones that favoured distributed storage, flexible schemas, and horizontal scalability — setting the stage for the rise of Big Data platforms.
 
 Together, OLTP and OLAP defined the early data landscape — both operating on structured data, both essential, but each shaped by fundamentally different requirements. Understanding these constraints explains why early data systems were designed the way they were, and also hints at the limitations that would later push the industry toward new paradigms.
+
+Next, in [When Data Outgrew Databases: Enter Big Data](https://amitashukla.in/blog/data-evolution-enter-big-data/), we introduce Big Data and how it tried to solve these limitations.
