@@ -62,9 +62,9 @@ Here's how a word count program would look like in Hive:
 ```sql
 -- create managed table
 CREATE TABLE input_tbl (
-    line string # create a table to load input data in hive having a single column 'line' of type string
+    line string -- create a table to load input data in hive having a single column 'line' of type string
 )
-ROW FORMAT DELIMITED # DELIMITED -> simple formats, SERDE -> json, avro, STORED BY -> external storage e.g. HBase
+ROW FORMAT DELIMITED -- DELIMITED -> simple formats, SERDE -> json, avro, STORED BY -> external storage e.g. HBase
 LINES TERMINATED BY '\n' 
 STORED AS parquet;
 
@@ -75,7 +75,7 @@ LOAD DATA INPATH '/hdfs/input/lines.txt' INTO TABLE input_tbl;
 -- query
 CREATE TABLE word_count AS
     SELECT word, COUNT(1) as count FROM	  
-        (SELECT EXPLODE(SPLIT(line, '\\s')) AS word FROM input_tbl) temp_tbl # EXPLODE converts a list in the same row to multiple rows
+        (SELECT EXPLODE(SPLIT(line, '\\s')) AS word FROM input_tbl) temp_tbl -- EXPLODE converts a list in the same row to multiple rows
     GROUP BY word
     SORT BY count DESC;
 ```
