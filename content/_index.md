@@ -1,24 +1,25 @@
 ---
 title: "About"
 ---
-__Hi 👋 I'm Amita__, a Software Developer with around 9 years of experience based in India. A programmer at heart, I love building, learning and breaking stuff using code 😬. A screen of clean code gives me the same feeling as opening a page from a fresh book...
+__Hi 👋 I'm Amita.__ I work as a software engineer at Cloudera, based in India. I build software, and write about it here — from design choices to day-to-day engineering.
 
-My expertise lies in building __Backend, Big Data and Cloud-based applications__, though I also take on database, frontend, machine learning work from time to time.
+A programmer at heart — I love building, learning and breaking stuff using code 😬. To me, clean code has the same quiet joy as the fresh pages of a new book.
 
 ## Tech Stack
-My father brought home a desktop when I was 10, back then it was just a sophisticated toy for me. I have come a long way since then, from using applications to writing them.
+My father brought home a desktop when I was 10 — back then it was mostly a sophisticated toy. I've come a long way since, from using apps to building them.
 
-A chunk of my experience has gone into writing REST web services, engines and frameworks using Java/Spring, batch and streaming data transformations using Scala/Spark/Kafka/Hive/MapReduce, Natural Language Processing using Python/R, and SQL/Python/Shell Scripting.
+Most of my hands-on time is on **backends and data**: REST services and platform code in Java/Spring and Go; batch and streaming pipelines in Scala, Spark, Kafka, and Hive (with some MapReduce in the early Hadoop days). SQL, Python, and shell scripts fill the gaps.
 
-On the frontend side, I have worked with React and vanilla Javascript, and a little bit with Purescript. 
+I've done NLP work in Python and R. On the frontend I've used React and vanilla JavaScript, and dabbled in PureScript.
 
-I believe in not restricting myself to the tech stack or programming language but rather focus on the purpose it solves, having switched gears between Python, Haskell, Groovy, .Net/ C#, PHP, C++ in the past. Overtime, I have gotten more inclined towards type safe languages.
+I'm not loyal to one stack. Over time I've also switched gears between Python, Haskell, Groovy, C#, PHP, and C++. I'm more drawn to type-safe languages, but I still let the problem choose the tool.
 
 ## Get in Touch
 You can reach out to me directly [here](/contact), [subscribe](/follow) to my blog or check out my profiles linked above.
 
 ## More about this Blog
-This blog is now built using Hugo and a minimal, content-first setup, something I deliberately chose to keep the focus on writing rather than tooling.
+This blog is built using Hugo and a minimal, content-first setup, something I deliberately chose to keep the focus on writing rather than tooling.
 
 Dive into my thoughts [here](/blog). I combine my passion for programming, teaching and writing through long-form posts and short notes.  
+
 This blog is open source and lives on [GitHub](https://github.com/amita-shukla/blog-hugo). If you spot an issue or want to suggest an improvement, feel free to open an issue or fork it and make it your own.
