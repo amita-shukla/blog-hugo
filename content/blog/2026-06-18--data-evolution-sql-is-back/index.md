@@ -14,7 +14,7 @@ author: Amita Shukla
 showTableOfContents: true
 ---
 
-Consider the word count example from my previous post [When Data Outgrew Databases: Enter Big Data](https://amitashukla.in/blog/data-evolution-enter-big-data/) The problem is simple: Count the frequency of each unique word in a huge file. We solved the problem using MapReduce, which allowed it to be processed efficiently at scale. 
+Consider the word count example from my previous post [When Data Outgrew Databases: Enter Big Data](https://amitashukla.in/blog/data-evolution-enter-big-data/). The problem is simple: Count the frequency of each unique word in a huge file. We solved this problem using MapReduce, which allowed it to be processed efficiently at scale. 
 
 However, coding this problem as an MR job was cumbersome. An MR job written in Java contains:
 - Mapper
@@ -60,7 +60,7 @@ Though Hive is used for structured data, it seamlessly integrated with other big
 
 Here's how a word count program would look like in Hive:
 ```sql
-# create managed table
+-- create managed table
 CREATE TABLE input_tbl (
     line string # create a table to load input data in hive having a single column 'line' of type string
 )
@@ -68,11 +68,11 @@ ROW FORMAT DELIMITED # DELIMITED -> simple formats, SERDE -> json, avro, STORED 
 LINES TERMINATED BY '\n' 
 STORED AS parquet;
 
-# text data gets converted to parquet format, or can use LOCATION clause in create query, but the data format of the undelying file must be same.
-# data gets moved to hive managed dir, by default /user/hive/warehouse/
+-- text data gets converted to parquet format, or can use LOCATION clause in create query, but the data format of the undelying file must be same.
+-- data gets moved to hive managed dir, by default /user/hive/warehouse/
 LOAD DATA INPATH '/hdfs/input/lines.txt' INTO TABLE input_tbl;
 
-# query
+-- query
 CREATE TABLE word_count AS
     SELECT word, COUNT(1) as count FROM	  
         (SELECT EXPLODE(SPLIT(line, '\\s')) AS word FROM input_tbl) temp_tbl # EXPLODE converts a list in the same row to multiple rows
