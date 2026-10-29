@@ -14,7 +14,7 @@ author: Amita Shukla
 showTableOfContents: true
 ---
 
-Consider the word count example from my previous post [](). The problem is simple: Count the frequency of each unique word in a huge file. We solved the problem using MapReduce, which allowed it to be processed efficiently at scale. 
+Consider the word count example from my previous post [When Data Outgrew Databases: Enter Big Data](https://amitashukla.in/blog/data-evolution-enter-big-data/) The problem is simple: Count the frequency of each unique word in a huge file. We solved the problem using MapReduce, which allowed it to be processed efficiently at scale. 
 
 However, coding this problem as an MR job was cumbersome. An MR job written in Java contains:
 - Mapper
