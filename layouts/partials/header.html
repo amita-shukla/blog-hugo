@@ -1,0 +1,88 @@
+<header class="header">
+    <nav class="header-nav">
+
+        {{ if isset .Site.Params "avatarurl" }}
+        <div class="avatar">
+            <a href="{{ .Site.BaseURL }}">
+                <img src='{{ .Scratch.Get "avatarImgSrc" }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}">
+            </a>
+        </div>
+        {{ end }}
+
+        <div class="nav-title">
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+
+        <div class="nav-links">
+            {{ range .Site.Menus.main }}
+            <div class="nav-link">
+                <a href="{{ .URL | absURL }}" aria-label="{{ .Identifier }}" {{ if .Params.NewPage -}}target="_blank" {{- end -}}>
+                    {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                </a>
+            </div>
+            {{ end }}
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link search-toggle">
+                <a href="#search" role="button" aria-label="{{ i18n "search" | default "Search" }}" aria-controls="search-overlay" aria-expanded="false">
+                    <span data-feather="search"></span>
+                </a>
+            </div>
+
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            <!-- For mobile -->
+            <ul class="nav-hamburger-list visibility-hidden">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL | absURL }}" {{ if .Params.NewPage -}} target="_blank"{{- end -}}>
+                        {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                    </a>
+                </li>
+                {{ end }}
+                <li class="nav-item search-toggle">
+                    <a href="#search" role="button" aria-label="{{ i18n "search" | default "Search" }}" aria-controls="search-overlay" aria-expanded="false">
+                        <span data-feather="search"></span>
+                    </a>
+                </li>
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="{{ i18n "search" | default "Search" }}" hidden>
+    <button type="button" class="search-close" aria-label="{{ i18n "closeSearch" | default "Close search" }}">
+        <span data-feather="x"></span>
+        <span class="search-close-hint" aria-hidden="true">Esc</span>
+    </button>
+    <div class="search-container">
+        <div class="search-input-wrapper">
+            <span data-feather="search" aria-hidden="true"></span>
+            <input id="search-input" class="search-input" type="search" autocomplete="off" spellcheck="false"
+                   placeholder="{{ i18n "searchPlaceholder" | default "Search posts" }}"
+                   aria-label="{{ i18n "search" | default "Search" }}" aria-controls="search-results">
+        </div>
+        <p id="search-count" class="search-count" aria-live="polite"></p>
+        <ul id="search-results" class="search-results"></ul>
+    </div>
+</div>
+<script src="{{ "js/search.js" | relURL }}" defer></script>
