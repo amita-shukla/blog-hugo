@@ -41,9 +41,9 @@ docker compose down
 
 ### Search index
 
-Site search reads `search-index.json`, which Hugo generates on every build (including `hugo server` and `docker compose up`) from `layouts/index.searchindex.json`. No extra step is needed.
+Site search is provided by the gokarna theme and enabled by the `SearchIndex` entry in `[outputs]` in `hugo.toml`. Hugo generates `search-index.json` on every build (including `hugo server` and `docker compose up`), so no extra step is needed.
 
-Index settings (page types, field boosts, stop words, minimum word and prefix lengths) are under `[params.search]` in `hugo.toml`.
+Index settings (page types, field boosts, stop words, minimum word and prefix lengths) are under `[params.search]` in `hugo.toml`. See the Search section of the theme's `exampleSite/content/posts/theme-documentation-basics.md` for all options.
 
 ## 4. Adding New Content
 
