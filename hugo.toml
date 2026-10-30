@@ -40,6 +40,15 @@ enableGitInfo = true
 
 enableRobotsTXT = true
 
+[outputFormats.SearchData]
+  mediaType = "application/json"
+  baseName = "search-data"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "SearchData"]
+
 [pagination]
   pagerSize = 10
 
