@@ -40,6 +40,10 @@ enableGitInfo = true
 
 enableRobotsTXT = true
 
+# "SearchIndex" (defined by the gokarna theme) enables site search
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
 [pagination]
   pagerSize = 10
 
@@ -70,3 +74,17 @@ enableRobotsTXT = true
     customHeadHTML = '<link rel="stylesheet" href="/css/custom.css">'
     customFooterHTML = '<script src="/js/mailchimp.js"></script>'
     customCommentHTML = '<script src="https://giscus.app/client.js" data-repo="amita-shukla/blog-hugo" data-repo-id="R_kgDOQ2l3iA" data-category="Announcements" data-category-id="DIC_kwDOQ2l3iM4C06I7" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async> </script>'
+
+  # Search index settings (see the gokarna theme docs). All optional; the theme defaults
+  # are shown, except types, which adds "note" to the default ["post"].
+  [params.search]
+    types = ["post", "note"]   # page types to index
+    minWordLen = 2             # shorter words are not indexed
+    minPrefixLen = 3           # query words this long or longer also match as prefixes
+    tfCap = 10                 # max times a word counts per field, so repetition can't outweigh a title match
+    # stopWords = ["a", "an", "the"]   # replaces the built-in stop-word list
+    [params.search.boost]
+      title = 10
+      tags = 5
+      headings = 3
+      body = 1

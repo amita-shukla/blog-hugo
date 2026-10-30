@@ -39,6 +39,12 @@ To stop the server:
 docker compose down
 ```
 
+### Search index
+
+Site search is provided by the gokarna theme and enabled by the `SearchIndex` entry in `[outputs]` in `hugo.toml`. Hugo generates `search-index.json` on every build (including `hugo server` and `docker compose up`), so no extra step is needed.
+
+Index settings (page types, field boosts, stop words, minimum word and prefix lengths) are under `[params.search]` in `hugo.toml`. See the Search section of the theme's `exampleSite/content/posts/theme-documentation-basics.md` for all options.
+
 ## 4. Adding New Content
 
 - Blog posts: `content/blog/YYYY-MM-DD--post-slug/index.md`
@@ -76,7 +82,7 @@ Netlify is used for deployment. Ensure the baseURL in `hugo.toml` matches your p
 ```
 baseURL = "https://amitashukla.in/"
 ```
-Netlify automatically builds Hugo using `hugo.toml` configuration.
+Netlify automatically builds Hugo using `hugo.toml` configuration. The search index is part of that build, so no extra deploy step is needed.
 
 ## 7. Troubleshooting
 
