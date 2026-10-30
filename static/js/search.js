@@ -1,4 +1,4 @@
-// Client side of the build-time search index (see scripts/build-search-index.sh).
+// Client side of the build-time search index (see layouts/index.searchindex.json).
 (function () {
   const overlay = document.getElementById('search-overlay');
   if (!overlay) return;
@@ -45,7 +45,7 @@
     return loading;
   }
 
-  // Must match the tokenizer in scripts/build-search-index.sh; its rules come from the index config.
+  // Must match the tokenizer in layouts/index.searchindex.json; its rules come from the index config.
   function tokenize(text) {
     const tokens = text.toLowerCase().match(index.tokenPattern) || [];
     const kept = tokens.filter((t) => t.length >= index.minWordLen && !index.stopWords.has(t));
