@@ -1,8 +1,8 @@
 services:
   hugo:
-    image: hugomods/hugo:0.154.3
-    command: hugo server --bind 0.0.0.0 --buildDrafts
+    image: ghcr.io/gohugoio/hugo:v0.169.0
+    command: server --bind 0.0.0.0 --buildDrafts --noBuildLock --poll 700ms
     ports:
       - "1313:1313"
     volumes:
-      - .:/src
+      - .:/project
